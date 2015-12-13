@@ -1,0 +1,2072 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索列表页</title>
+    <script src="js/html5shiv.js"></script>
+    <!--[if IE 6]>
+        <script src="js/DD_belatedPNG_0.0.8a.js"></script>
+        <script>
+            DD_belatedPNG.fix('.ss,.arrows,.related,.more,.rmfl,.attr,.gb,.left_btn,.right_btn,.btm_link,.goodList,.jiantou');
+        </script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/search_foot.css">
+    <link rel="shortcut icon" href="http://www.gome.com.cn/ec/homeus/favicon.ico">
+</head>
+<body>
+        <!--顶部导航start-->
+        <div class="topNav">
+            <div class="navContent widthWrap clearfix">
+                <span class="navLeft fl">
+                    <a href="javascript:;" class="tdCode fl">二维码</a>
+                    <a href="javascript:;" class="guomei activeA fl">手机国美</a>
+                    <a href="javascript:;" class="guomei fl">国之美</a>
+                    <a href="javascript:;" class="guomei fl">多边黄金</a>
+                </span>
+                <ul class="navRight fr">
+                    <li class="gmOnline fl" style="color: #A5A5A5;">
+                        国美在线欢迎你！
+                    </li>
+                    <li class="logIn fl">
+                        <a class="fl" href="javascript:;">登录</a>
+                    </li>
+                    <li class="navBars fl">
+                        <a class="fl" href="javascript:;">注册</a>
+                    </li>
+                    <li class="navBars fl">
+                        <a class="fl" href="javascript:;">我的订单</a>
+                    </li>
+                    <li class="navBars fl">
+                        <a class="fl" href="javascript:;">我的国美</a>
+                        <i class="icoSj fl"></i>
+                    </li>
+                    <li class="navBars fl">
+                        <a class="fl" href="javascript:;">在线客服</a>
+                    </li>
+                    <li class="navBars fl">
+                        <a class="fl" href="javascript:;">服务中心</a>
+                        <i class="icoSj fl"></i>
+                    </li>
+                    <li class="navBars fl">
+                        <a class="fl" href="javascript:;">企业服务</a>
+                        <i class="icoSj fl"></i>
+                    </li>
+                    <li class="navBars fl">
+                        <a class="fl" href="javascript:;">国美社区</a>
+                    </li>
+                    <li class="marchant fl" style="margin-left: 30px;*margin-left: 30px;">
+                        <a class="sjrz fl" href="javascript:;">商家入驻</a>
+                        <a href="javascript:;" class="icoRight fl"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--顶部广告start-->
+        <div class="topAd widthWrap">
+            <a class="bigAd" href="javascript:;">
+                <img src="img/topad.jpg" alt="ad" />
+                <i class="style_inline gb"></i>
+            </a>
+        </div>
+        <!--头部start-->
+        <header class="gomeHead" style="box-shadow:0 2px 4px #e6e6e6;*border-bottom:2px soild #e6e6e6;border-bottom:2px solid #e6e6e6\9;">
+            <div class="headMain widthWrap clearfix">
+                <div class="searchBars fl">
+                    <h1 class="barsLeft fl">
+                        <a class="logo style_inline" href="javascript:;">
+                        <img src="img/gomelogo.png" alt="logo" />
+                        </a>
+                        <a class="logoAd style_inline" href="javascript:;">
+                        <img src="img/logo.gif" alt="gif"/>
+                        </a>
+                    </h1>
+                    <div class="search_box fl">
+                        <div class="main_searchBar clearfix">
+                            <input class="fl" id="television" placeholder="笔记本" value="笔记本" />
+                            <button class="fr" type="button">搜索</button>
+                        </div>
+                        <nav class="hotSearch">
+                            <a class="style_inline" href="javascript:;" style="color: #cc0000;">彩电革命</a>
+                            <a class="style_inline" href="javascript:;">数码暑促</a>
+                            <a class="style_inline" href="javascript:;">小家电满减</a>
+                            <a class="style_inline" href="javascript:;">沁园送滤芯</a>
+                            <a class="style_inline" href="javascript:;" style="color: #cc0000;">家装节5折</a>
+                            <a class="style_inline" href="javascript:;">8.3元秒</a>
+                            <a class="style_inline" href="javascript:;">手机5折</a>
+                            <a class="style_inline" href="javascript:;">商品排行榜</a>
+                        </nav>
+                    </div>
+                    <span class="barsRight fr">
+                        <a class="gwc style_inline" href="javascript:;">
+                            <i></i>
+                        </a>
+                        <a class="empty" href="javascript:;">
+                            购物车空了
+                            <b class="style_inline"></b>
+                        </a>
+                    </span>
+
+                </div>
+                <div class="subNav fl">
+                    <h2 class="goodsSort fl">
+                        <a href="javascript:;" class="fl">
+                            全部商品分类
+                        </a>
+                        <i class="goodList fl"></i>
+                    </h2>
+                    <nav class="navList fl">
+                        <a href="javascript:;" class="hotLink style_inline fl" style="color: #cc0000; border-bottom: 4px solid #db4c4c;">首页</a>
+                        <a href="javascript:;" class="hotLink style_inline fl">抢购</a>
+                        <a href="javascript:;" class="otherLink style_inline fl">团购</a>
+                        <a href="javascript:;" class="otherLink style_inline fl">服装城</a>
+                        <a href="javascript:;" class="otherLink style_inline fl">家电城</a>
+                        <a href="javascript:;" class="otherLink style_inline fl">超市</a>
+                        <a href="javascript:;" class="otherLink style_inline fl">金融</a>
+                        <a href="javascript:;" class="otherLink style_inline fl">企业采购</a>
+                        <a href="javascript:;" class="otherLink style_inline fl">国美家</a>
+                    </nav>
+                    <aside class="apple fr">
+                        <div class="appleLeft fl">
+                            <a href="javascript:;" style="color:#333;">iphone6</a>
+                            <a href="javascript:;" style="color: #d20415;">
+                                4658元
+                            </a>
+                        </div>
+                        <span class="sanjiao fl">
+                            <i class="topSj gysj fl"></i>
+                            <i class="bottomSj gysj fl"></i>
+                        </span>
+                    </aside>
+                </div>
+            </div>
+        </header>
+        <!-- 主体内容  顶部小盒子-->
+        <section class="top_box">
+            <div class="search_result clearfix">
+                <h3 class="fl">全部搜索结果</h3>
+                <i class="arrows fl"></i>
+                <form action="" class="search_bar fl">
+                    <input type="text" class="input_box" placeholder="笔记本">
+                    <i class="ss style_inline"></i>
+                </form>
+            </div>
+        </section>
+        <!-- 主体盒子内容 -->
+        <section class="box">
+            <div class="matching">
+                你是不是要找:
+                <a href="" class="match_list" style="margin-left:7px;">笔记本电脑</a>
+                <a href="" class="match_list">联想（lenovo）</a>
+                <a href="" class="match_list">苹果笔记本</a>
+                <a href="" class="match_list">华硕（asus）</a>
+                <a href="" class="match_list">笔记本内存条</a>
+                <a href="" class="match_list">笔记本硬盘</a>
+            </div>
+            <div class="xgcp">
+                “<span class="red_sty">笔记本</span>”
+                <span class="black_sty">找到</span>
+                <span class="red_sty" style="font-weight:normal;">46110</span>
+                <span class="black_sty">件相关产品</span>
+            </div>
+            <div class="brand two_bk">
+                <dl class="pinpai clearfix">
+                    <dt class="brand_left fl">品牌：</dt>
+                    <dd class="brand_list fl">
+                        <span class="brand_all fl">
+                            <a class="fl" href="">所有品牌</a>
+                        </span>
+                        <span class="brand_sub fl">
+                            <a href="" class="brand_one fl">A</a>
+                            <a href="" class="brand_one fl">B</a>
+                            <a href="" class="brand_one fl">C</a>
+                            <a href="" class="brand_one fl">D</a>
+                            <a href="" class="brand_one fl">E</a>
+                            <a href="" class="brand_one fl">F</a>
+                            <a href="" class="brand_one fl">G</a>
+                            <a href="" class="brand_one fl">H</a>
+                            <a href="" class="brand_one fl">I</a>
+                            <a href="" class="brand_one fl">J</a>
+                            <a href="" class="brand_one fl">K</a>
+                            <a href="" class="brand_one fl">L</a>
+                            <a href="" class="brand_one fl">M</a>
+                            <a href="" class="brand_one fl">N</a>
+                            <a href="" class="brand_one fl">O</a>
+                            <a href="" class="brand_one fl">P</a>
+                            <a href="" class="brand_one fl">Q</a>
+                            <a href="" class="brand_one fl">R</a>
+                            <a href="" class="brand_one fl">S</a>
+                            <a href="" class="brand_one fl">T</a>
+                            <i href="" class="fl u_style">U</i>
+                            <a href="" class="brand_one fl">V</a>
+                            <a href="" class="brand_one fl">W</a>
+                            <a href="" class="brand_one fl">X</a>
+                            <a href="" class="brand_one fl">Y</a>
+                            <a href="" class="brand_one fl">Z</a>
+                        </span>
+                    </dd>
+                    <dd class="brand_btn fr">
+                        <i class="duoxuan fl">多选</i>
+                        <a class="more fr" href="">更多</a>
+                    </dd>
+                </dl>
+                <ul class="brand_sort">
+                    <li class="brand_logo fl">
+                        <a href="">联想（ThinkPad）</a>
+                    </li>
+                    <li class="brand_logo fl">
+                        <a href="">镭波（RaBook）</a>
+                    </li>
+                    <li class="brand_logo fl">
+                        <a href="">戴尔（DELL）</a>
+                    </li>
+                    <li class="brand_logo fl">
+                        <a href="">联想（lenovo）</a>
+                    </li>
+                    <li class="brand_logo fl">
+                        <a href="">华硕（ASUS）</a>
+                    </li>
+                    <li class="brand_logo fl">
+                        <a href="">宏碁（ACER）</a>
+                    </li>
+                    <li class="brand_logo fl">
+                        <a href="">惠普（HP）</a>
+                    </li>
+                    <li class="brand_logo fl">
+                        <a href="">三星（SAMSUNG）</a>
+                    </li>
+                    <li class="brand_logo fl">
+                        <a href="">神舟（HASEE）</a>
+                    </li>
+                    <li class="brand_logo fl">
+                        <a href="">索尼（SONY）</a>
+                    </li>
+                    <li class="brand_logo fl">
+                        <a href="">东芝（TOSHIBA）</a>
+                    </li>
+                    <li class="brand_logo fl">
+                        <a href="">清华同方（THTF）</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hot_sort two_bk clearfix">
+                <strong class="fl_style rmfl fl">热门分类</strong>
+                <ul class="other_sort fl">
+                     <li class="brand_note note_one fl">
+                        <a href="">笔记本</a>
+                    </li>
+                    <li class="brand_note note_one fl">
+                        <a href="">游戏本</a>
+                    </li>
+                    <li class="brand_note note_one fl">
+                        <a href="">超级本</a>
+                    </li>
+                    <li class="brand_note note_one fl">
+                        <a href="">散热垫</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="xgfl two_bk clearfix">
+                <strong class="fl_style related fl">相关分类</strong>
+                <ul class="other_sort fl">
+                     <li class="brand_note note_two fl">
+                        <a href="">笔记本配件</a>
+                    </li>
+                    <li class="brand_note note_two fl">
+                        <a href="">平板电脑</a>
+                    </li>
+                    <li class="brand_note note_two fl">
+                        <a href="">笔记本包</a>
+                    </li>
+                    <li class="brand_note note_two fl">
+                        <a href="">鼠标</a>
+                    </li>
+                    <li class="brand_note note_two fl">
+                        <a href="">电脑音箱</a>
+                    </li>
+                    <li class="brand_note note_two fl">
+                        <a href="">笔记本电源</a>
+                    </li>
+                    <li class="brand_note note_two fl">
+                        <a href="">键盘</a>
+                    </li>
+                    <li class="brand_note note_two fl">
+                        <a href="">摄像头/监控摄像</a>
+                    </li>
+                    <li class="brand_note note_two fl">
+                        <a href="">内存</a>
+                    </li>
+                    <li class="brand_note note_two fl">
+                        <a href="">电脑包</a>
+                    </li>
+                    <li class="brand_note note_two fl">
+                        <a href="">其他配件</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cpdw clearfix">
+                <strong class="fl_style cpdw_sty fl" style="padding-right:19px;">
+                    产品定位
+                </strong>
+                <ul class="other_sort fl">
+                     <li class="brand_note note_three fl">
+                        <a href="">入门娱乐</a>
+                    </li>
+                    <li class="brand_note note_three fl">
+                        <a href="">轻薄多彩</a>
+                    </li>
+                    <li class="brand_note note_three fl">
+                        <a href="">特价清仓</a>
+                    </li>
+                    <li class="brand_note note_three fl">
+                        <a href="">基础办公</a>
+                    </li>
+                    <li class="brand_note note_three fl">
+                        <a href="">商务便携</a>
+                    </li>
+                    <li class="brand_note note_three fl">
+                        <a href="">高端旗舰</a>
+                    </li>
+                    <li class="brand_note note_three fl">
+                        <a href="">游戏发烧</a>
+                    </li>
+                </ul>
+                <span class="brand_btn fr">
+                    <i class="duoxuan fl">多选</i>
+                    <a class="more fr" href="">更多</a>
+                </span>
+                <div class="more_attr">
+                    <a href="" class="attr">更多属性 (显卡定位...）</a>
+                </div>
+            </div>
+            <div class="content_box clearfix">
+                <div class="content_details fl">
+                    <div class="details_left fl">
+                        <div class="details_top fl">
+                            <div class="top_list clearfix">
+                                <span class="paixu fl">
+                                    <a href="" class="fl" style="background-color:#cc0000; color:#fff;">综合</a>
+                                    <a href="" class="fl">销量</a>
+                                    <a href="" class="fl">价格</a>
+                                    <a href="" class="fl">新品</a>
+                                    <a href="" class="fl">评价</a>
+                                </span>
+                                <form action="" class="price fl">
+                                    <span class="fl">按价格筛选</span>
+                                    <input type="text" class="put_left fl" placeholder="￥">
+                                    <s class="fl"></s>
+                                    <input type="text" class="put_right fl" placeholder="￥">
+                                </form>
+                                <p class="fy_btn fr">
+                                    <span class="total_goods fl">共3357商品</span>
+                                    <span class="page_list fl">
+                                        <i class="fl">1</i>
+                                        <em class="fl">/</em>
+                                        <b class="fl">70</b>
+                                    </span>
+                                    <span class="hy_btn fl">
+                                        <a href="" class="left_btn fl"></a>
+                                        <a href="" class="right_btn fl"></a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <form class="details_bottom fl">
+                            <span class="sent fl">送至：</span>
+                            <select name="" id="" class="location fl">
+                                <option value="">北京市东城区全部区域</option>
+                                <option value="">上海</option>
+                                <option value="">广州</option>
+                                <option value="">深圳</option>
+                            </select>
+                            <div class="youhuo fl">
+                                <input type="checkbox" id="youhuo" class="fl">
+                                <label for="youhuo" class="fl">仅显示有货商品</label>
+                            </div>
+                            <div class="pslx fl">
+                                <i class="left_line fl"></i>
+                                <span class="peisong fl">配送类型：</span>
+                                <input type="radio" id="rad_one" class="fl" name="sort">
+                                <label for="rad_one" class="fl">全部</label>
+                                <input type="radio" id="rad_two" class="fl" name="sort">
+                                <label for="rad_two" class="fl">国美配送</label>
+                                <input type="radio" id="rad_three" class="fl" name="sort">
+                                <label for="rad_three" class="fl">第三方配送</label>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="details_middle fl">
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G GT820M 2G独显 DVD刻录 摄像头 读卡器 蓝牙 Win8.1 ">
+                                惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="duibi" class="fl">
+                                    <label for="duibi" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000795684_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显 win8）黑色彪悍小Y，特效全开，不坑队友不坑爹！现在购买，可免费升级到Windows 10！">
+                                联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥4688.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有69人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db_one" class="fl">
+                                    <label for="db_one" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000788831_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title=" 华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色）">
+                                华硕(ASUS)F554LP5200  15.6英寸<strong>笔记本</strong>电脑（i5-5200U 4GB内存 500G硬盘
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥3399.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有305人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db_two" class="fl">
+                                    <label for="db_two" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）G40-70MA 14.0英寸笔记本电脑（i5-4210U 4G 500G 2G独显 GT820M显卡 DVD刻录 Win8）金属黑【全民疯抢】学习娱乐全能，金属面板，卖的就是性价比！">
+                                联想（Lenovo）G40-70MA 14.0英寸<strong>笔记本</strong>电脑（i5-4210U 4G 500G 2G独显  
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db_three" class="fl">
+                                    <label for="db_three" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G GT820M 2G独显 DVD刻录 摄像头 读卡器 蓝牙 Win8.1 ">
+                                惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db_four" class="fl">
+                                    <label for="db_four" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000795684_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显 win8）黑色彪悍小Y，特效全开，不坑队友不坑爹！现在购买，可免费升级到Windows 10！">
+                                联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥4688.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有69人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db_five" class="fl">
+                                    <label for="db_five" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000788831_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title=" 华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色）">
+                                华硕(ASUS)F554LP5200  15.6英寸<strong>笔记本</strong>电脑（i5-5200U 4GB内存 500G硬盘
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥3399.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有305人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db_six" class="fl">
+                                    <label for="db_six" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）G40-70MA 14.0英寸笔记本电脑（i5-4210U 4G 500G 2G独显 GT820M显卡 DVD刻录 Win8）金属黑【全民疯抢】学习娱乐全能，金属面板，卖的就是性价比！">
+                                联想（Lenovo）G40-70MA 14.0英寸<strong>笔记本</strong>电脑（i5-4210U 4G 500G 2G独显  
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db_seven" class="fl">
+                                    <label for="db_seven" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G GT820M 2G独显 DVD刻录 摄像头 读卡器 蓝牙 Win8.1 ">
+                                惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db_eig" class="fl">
+                                    <label for="db_eig" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000795684_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显 win8）黑色彪悍小Y，特效全开，不坑队友不坑爹！现在购买，可免费升级到Windows 10！">
+                                联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥4688.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有69人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db_nine" class="fl">
+                                    <label for="db_nine" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000788831_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title=" 华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色）">
+                                华硕(ASUS)F554LP5200  15.6英寸<strong>笔记本</strong>电脑（i5-5200U 4GB内存 500G硬盘
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥3399.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有305人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db_ten" class="fl">
+                                    <label for="db_ten" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）G40-70MA 14.0英寸笔记本电脑（i5-4210U 4G 500G 2G独显 GT820M显卡 DVD刻录 Win8）金属黑【全民疯抢】学习娱乐全能，金属面板，卖的就是性价比！">
+                                联想（Lenovo）G40-70MA 14.0英寸<strong>笔记本</strong>电脑（i5-4210U 4G 500G 2G独显  
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db11" class="fl">
+                                    <label for="db11" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G GT820M 2G独显 DVD刻录 摄像头 读卡器 蓝牙 Win8.1 ">
+                                惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db12" class="fl">
+                                    <label for="db12" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000795684_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显 win8）黑色彪悍小Y，特效全开，不坑队友不坑爹！现在购买，可免费升级到Windows 10！">
+                                联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥4688.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有69人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db13" class="fl">
+                                    <label for="db13" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000788831_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title=" 华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色）">
+                                华硕(ASUS)F554LP5200  15.6英寸<strong>笔记本</strong>电脑（i5-5200U 4GB内存 500G硬盘
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥3399.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有305人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db14" class="fl">
+                                    <label for="db14" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）G40-70MA 14.0英寸笔记本电脑（i5-4210U 4G 500G 2G独显 GT820M显卡 DVD刻录 Win8）金属黑【全民疯抢】学习娱乐全能，金属面板，卖的就是性价比！">
+                                联想（Lenovo）G40-70MA 14.0英寸<strong>笔记本</strong>电脑（i5-4210U 4G 500G 2G独显  
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db15" class="fl">
+                                    <label for="db15" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G GT820M 2G独显 DVD刻录 摄像头 读卡器 蓝牙 Win8.1 ">
+                                惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db16" class="fl">
+                                    <label for="db16" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000795684_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显 win8）黑色彪悍小Y，特效全开，不坑队友不坑爹！现在购买，可免费升级到Windows 10！">
+                                联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥4688.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有69人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db17" class="fl">
+                                    <label for="db17" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000788831_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title=" 华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色）">
+                                华硕(ASUS)F554LP5200  15.6英寸<strong>笔记本</strong>电脑（i5-5200U 4GB内存 500G硬盘
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥3399.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有305人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db18" class="fl">
+                                    <label for="db18" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）G40-70MA 14.0英寸笔记本电脑（i5-4210U 4G 500G 2G独显 GT820M显卡 DVD刻录 Win8）金属黑【全民疯抢】学习娱乐全能，金属面板，卖的就是性价比！">
+                                联想（Lenovo）G40-70MA 14.0英寸<strong>笔记本</strong>电脑（i5-4210U 4G 500G 2G独显  
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db19" class="fl">
+                                    <label for="db19" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G GT820M 2G独显 DVD刻录 摄像头 读卡器 蓝牙 Win8.1 ">
+                                惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db20" class="fl">
+                                    <label for="db20" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000795684_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显 win8）黑色彪悍小Y，特效全开，不坑队友不坑爹！现在购买，可免费升级到Windows 10！">
+                                联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥4688.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有69人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db21" class="fl">
+                                    <label for="db21" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000788831_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title=" 华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色）">
+                                华硕(ASUS)F554LP5200  15.6英寸<strong>笔记本</strong>电脑（i5-5200U 4GB内存 500G硬盘
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥3399.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有305人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db22" class="fl">
+                                    <label for="db22" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）G40-70MA 14.0英寸笔记本电脑（i5-4210U 4G 500G 2G独显 GT820M显卡 DVD刻录 Win8）金属黑【全民疯抢】学习娱乐全能，金属面板，卖的就是性价比！">
+                                联想（Lenovo）G40-70MA 14.0英寸<strong>笔记本</strong>电脑（i5-4210U 4G 500G 2G独显  
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db23" class="fl">
+                                    <label for="db23" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G GT820M 2G独显 DVD刻录 摄像头 读卡器 蓝牙 Win8.1 ">
+                                惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db24" class="fl">
+                                    <label for="db24" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000795684_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显 win8）黑色彪悍小Y，特效全开，不坑队友不坑爹！现在购买，可免费升级到Windows 10！">
+                                联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥4688.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有69人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db25" class="fl">
+                                    <label for="db25" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000788831_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title=" 华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色）">
+                                华硕(ASUS)F554LP5200  15.6英寸<strong>笔记本</strong>电脑（i5-5200U 4GB内存 500G硬盘
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥3399.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有305人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db26" class="fl">
+                                    <label for="db26" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）G40-70MA 14.0英寸笔记本电脑（i5-4210U 4G 500G 2G独显 GT820M显卡 DVD刻录 Win8）金属黑【全民疯抢】学习娱乐全能，金属面板，卖的就是性价比！">
+                                联想（Lenovo）G40-70MA 14.0英寸<strong>笔记本</strong>电脑（i5-4210U 4G 500G 2G独显  
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db27" class="fl">
+                                    <label for="db27" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G GT820M 2G独显 DVD刻录 摄像头 读卡器 蓝牙 Win8.1 ">
+                                惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db28" class="fl">
+                                    <label for="db28" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000795684_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显 win8）黑色彪悍小Y，特效全开，不坑队友不坑爹！现在购买，可免费升级到Windows 10！">
+                                联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥4688.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有69人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db29" class="fl">
+                                    <label for="db29" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000788831_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title=" 华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色）">
+                                华硕(ASUS)F554LP5200  15.6英寸<strong>笔记本</strong>电脑（i5-5200U 4GB内存 500G硬盘
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥3399.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有305人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db30" class="fl">
+                                    <label for="db30" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）G40-70MA 14.0英寸笔记本电脑（i5-4210U 4G 500G 2G独显 GT820M显卡 DVD刻录 Win8）金属黑【全民疯抢】学习娱乐全能，金属面板，卖的就是性价比！">
+                                联想（Lenovo）G40-70MA 14.0英寸<strong>笔记本</strong>电脑（i5-4210U 4G 500G 2G独显  
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db31" class="fl">
+                                    <label for="db31" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G GT820M 2G独显 DVD刻录 摄像头 读卡器 蓝牙 Win8.1 ">
+                                惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db32" class="fl">
+                                    <label for="db32" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000795684_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显 win8）黑色彪悍小Y，特效全开，不坑队友不坑爹！现在购买，可免费升级到Windows 10！">
+                                联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥4688.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有69人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db33" class="fl">
+                                    <label for="db33" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000788831_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title=" 华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色）">
+                                华硕(ASUS)F554LP5200  15.6英寸<strong>笔记本</strong>电脑（i5-5200U 4GB内存 500G硬盘
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥3399.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有305人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db34" class="fl">
+                                    <label for="db34" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）G40-70MA 14.0英寸笔记本电脑（i5-4210U 4G 500G 2G独显 GT820M显卡 DVD刻录 Win8）金属黑【全民疯抢】学习娱乐全能，金属面板，卖的就是性价比！">
+                                联想（Lenovo）G40-70MA 14.0英寸<strong>笔记本</strong>电脑（i5-4210U 4G 500G 2G独显  
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db35" class="fl">
+                                    <label for="db35" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G GT820M 2G独显 DVD刻录 摄像头 读卡器 蓝牙 Win8.1 ">
+                                惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db36" class="fl">
+                                    <label for="db36" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000795684_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显 win8）黑色彪悍小Y，特效全开，不坑队友不坑爹！现在购买，可免费升级到Windows 10！">
+                                联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥4688.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有69人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db36" class="fl">
+                                    <label for="db36" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000788831_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title=" 华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色）">
+                                华硕(ASUS)F554LP5200  15.6英寸<strong>笔记本</strong>电脑（i5-5200U 4GB内存 500G硬盘
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥3399.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有305人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db37" class="fl">
+                                    <label for="db37" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）G40-70MA 14.0英寸笔记本电脑（i5-4210U 4G 500G 2G独显 GT820M显卡 DVD刻录 Win8）金属黑【全民疯抢】学习娱乐全能，金属面板，卖的就是性价比！">
+                                联想（Lenovo）G40-70MA 14.0英寸<strong>笔记本</strong>电脑（i5-4210U 4G 500G 2G独显  
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db38" class="fl">
+                                    <label for="db38" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G GT820M 2G独显 DVD刻录 摄像头 读卡器 蓝牙 Win8.1 ">
+                                惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db39" class="fl">
+                                    <label for="db39" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000795684_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显 win8）黑色彪悍小Y，特效全开，不坑队友不坑爹！现在购买，可免费升级到Windows 10！">
+                                联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥4688.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有69人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db40" class="fl">
+                                    <label for="db40" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000788831_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title=" 华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色）">
+                                华硕(ASUS)F554LP5200  15.6英寸<strong>笔记本</strong>电脑（i5-5200U 4GB内存 500G硬盘
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥3399.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有305人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db41" class="fl">
+                                    <label for="db41" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）G40-70MA 14.0英寸笔记本电脑（i5-4210U 4G 500G 2G独显 GT820M显卡 DVD刻录 Win8）金属黑【全民疯抢】学习娱乐全能，金属面板，卖的就是性价比！">
+                                联想（Lenovo）G40-70MA 14.0英寸<strong>笔记本</strong>电脑（i5-4210U 4G 500G 2G独显  
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db42" class="fl">
+                                    <label for="db42" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G GT820M 2G独显 DVD刻录 摄像头 读卡器 蓝牙 Win8.1 ">
+                                惠普（HP） 经典传奇系列 HP 14-r224TX 14英寸<strong>笔记本</strong>电脑（i5-5200U 4G 500G
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db43" class="fl">
+                                    <label for="db43" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000795684_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显 win8）黑色彪悍小Y，特效全开，不坑队友不坑爹！现在购买，可免费升级到Windows 10！">
+                                联想（Lenovo）Y430p 14.0英寸游戏本（i5-4210M 4G 1T GTX850M 2G独显
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥4688.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有69人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db44" class="fl">
+                                    <label for="db44" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000788831_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title=" 华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色）">
+                                华硕(ASUS)F554LP5200  15.6英寸<strong>笔记本</strong>电脑（i5-5200U 4GB内存 500G硬盘
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥3399.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有305人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db45" class="fl">
+                                    <label for="db45" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                        <li class="sub_content fl">
+                            <a href="" class="sub_pic">
+                                <img src="img/1000786777_210.jpg" alt="">
+                            </a>
+                            <a href="" class="sub_con" title="联想（Lenovo）G40-70MA 14.0英寸笔记本电脑（i5-4210U 4G 500G 2G独显 GT820M显卡 DVD刻录 Win8）金属黑【全民疯抢】学习娱乐全能，金属面板，卖的就是性价比！">
+                                联想（Lenovo）G40-70MA 14.0英寸<strong>笔记本</strong>电脑（i5-4210U 4G 500G 2G独显  
+                            </a>
+                            <p class="price_zj clearfix">
+                                <span class="price_left fl">¥2999.00</span>
+                                <mark class="price_right fl">直降</mark>
+                            </p>
+                            <p class="ph_yh clearfix">
+                                <a href="" class="phyh_left fl">已有397人评价</a>
+                                <span class="phyh_right fr">北京市有货</span>
+                            </p>
+                            <form action="" class="jrgwc clearfix">
+                                <input type="button" class="join fl" value="加入购物车">
+                                <input type="button" class="collect fl" value="收藏">
+                                <span class="contrast fr">
+                                    <input type="checkbox" id="db46" class="fl">
+                                    <label for="db46" class="fl">对比</label>
+                                </span>
+                            </form>
+                            <span class="gmzy">国美自营</span>
+                        </li>
+                    </ul>
+                	<div class="details_fylink  fr">
+                		<ul class="bottom_ul fl">
+                			<li class="bottom_list fl" style="padding-left: 10px; background-color: #f8f8f8;">
+                				<a href="" class="btm_link gray_sty left_link fl">上一页</a>
+                			</li>
+                			<li class="bottom_list fl">
+                				<a href="" class="btm_link gray_sty fl">1</a>
+                			</li>
+                			<li class="bottom_list fl">
+                				<a href="" class="btm_link sty_5e fl">2</a>
+                			</li>
+                			<li class="bottom_list fl">
+                				<a href="" class="btm_link sty_5e fl">3</a>
+                			</li>
+                			<li class="bottom_list fl" style="border-top: none; border-bottom: none;">
+                				<a href="" class="btm_link sty_5e fl" style="padding: 0 10px;">...</a>
+                			</li>
+                			<li class="bottom_list fl">
+                				<a href="" clas-a>
+                			</li>
+                			<li class="bottom_list fl" style="padding-right:10px">
+                				<a href="" class="btm_link sty_5e right_link fl">下一页</a>
+                			</li>
+                		</ul>
+                        <form action="" class="right_btn fl">
+                            <span class="to_page fl">到</span>
+                            <input type="text" class="page fl" value="1">
+                            <span class="to_page fl">页</span>
+                            <input type="button" class="page_btn fl" value="确定">
+                        </form>
+                	</div>
+                </div>
+                <aside class="tuijian fr">
+                    <div class="tg">
+                        <span class="tg_top">推广商品</span>
+                        <ul class="tg_list">
+                            <li class="tg_li clearfix">
+                                <a href="" class="tg_pic fl">
+                                    <img src="img/d81e6b805994086efda8c923988ae17c.jpg" alt="">
+                                </a>
+                                <a href="" class="tg_con fl" title="联想（lenovo）G50-80AT 15.6英寸笔记本电脑/游戏本(黑色 i7-5500U 高分屏 官方标配)">
+                                    联想（lenovo）G50-80AT 15.6英寸笔记本电脑/游戏本(黑色 i7-5500U 高分屏 官方标配)
+                                </a>
+                                <span class="tg_pirce fl">¥4,399.00</span>
+                            </li>
+                            <li class="tg_li clearfix">
+                                <a href="" class="tg_pic fl">
+                                    <img src="img/861c8d6d37061212ecac4f05e0f7c90c.jpg" alt="">
+                                </a>
+                                <a href="" class="tg_con fl"title="联想（lenovo ）Y50-70AM 15.6英寸游戏笔记本电脑(i5-8G-GTX960 4G独显 标配)">
+                                    联想（lenovo ）Y50-70AM 15.6英寸游戏笔记本电脑(i5-8G-GTX960 4G独显 标配)
+                                </a>
+                                <span class="tg_pirce fl">¥7,099.00</span>
+                            </li>
+                            <li class="tg_li clearfix">
+                                <a href="" class="tg_pic fl">
+                                    <img src="img/d398a5c451a4da4ec86288986ff3a965.jpg" alt="">
+                                </a>
+                                <a href="" class="tg_con fl"title="联想（lenovo）Y430P 14英寸游戏本电脑/y430p(i5-4210/4G/1T/高清 标配)">
+                                    联想（lenovo）Y430P 14英寸游戏本电脑/y430p(i5-4210/4G/1T/高清 标配)
+                                </a>
+                                <span class="tg_pirce fl">¥4,799.00</span>
+                            </li>
+                            <li class="tg_li clearfix">
+                                <a href="" class="tg_pic fl">
+                                    <img src="img/40067d1a203b99f738175b27c7ee7a15.jpg" alt="">
+                                </a>
+                                <a href="" class="tg_con fl"title="联想（Lenovo） G40-70MA-IFI 14英寸笔记本电脑/G4070AT-ITH(i5-4210/2G独显磨砂黑 标配)">
+                                    联想（Lenovo） G40-70MA-IFI 14英寸笔记本电脑/G4070AT-ITH(i5-4210/2G独显磨砂黑 标配)
+                                </a>
+                                <span class="tg_pirce fl">¥3,499.00</span>
+                            </li>
+                            <li class="tg_li clearfix" style="border-bottom:none;">
+                                <a href="" class="tg_pic fl">
+                                    <img src="img/d35797f008ab8de06ae6a0775552e544.jpg" alt="">
+                                </a>
+                                <a href="" class="tg_con fl"title="联想(Lenovo) YOGA3 14-IFI 14英寸超极本YOGA314 2G独显(I5/4G/256橙色)">
+                                    联想(Lenovo) YOGA3 14-IFI 14英寸超极本YOGA314 2G独显(I5/4G/256橙色)
+                                </a>
+                                <span class="tg_pirce fl">¥6,499.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tg rxtj">
+                        <span class="tg_top">热销推荐</span>
+                        <ul class="tg_list">
+                            <li class="tg_li clearfix">
+                                <a href="" class="tg_pic fl">
+                                    <img src="img/1000787574_130.jpg" alt="">
+                                </a>
+                                <a href="" class="tg_con fl" title="联想（lenovo）G50-80AT 15.6英寸笔记本电脑/游戏本(黑色 i7-5500U 高分屏 官方标配)">
+                                    联想（lenovo）G50-80AT 15.6英寸笔记本电脑/游戏本(黑色 i7-5500U 高分屏 官方标配)
+                                </a>
+                                <span class="tg_pirce fl">¥4,399.00</span>
+                            </li>
+                            <li class="tg_li clearfix">
+                                <a href="" class="tg_pic fl">
+                                    <img src="img/1000741039_130.jpg" alt="">
+                                </a>
+                                <a href="" class="tg_con fl"title="联想（lenovo ）Y50-70AM 15.6英寸游戏笔记本电脑(i5-8G-GTX960 4G独显 标配)">
+                                    联想（lenovo ）Y50-70AM 15.6英寸游戏笔记本电脑(i5-8G-GTX960 4G独显 标配)
+                                </a>
+                                <span class="tg_pirce fl">¥7,099.00</span>
+                            </li>
+                            <li class="tg_li clearfix">
+                                <a href="" class="tg_pic fl">
+                                    <img src="img/1000692439_130.jpg" alt="">
+                                </a>
+                                <a href="" class="tg_con fl"title="联想（lenovo）Y430P 14英寸游戏本电脑/y430p(i5-4210/4G/1T/高清 标配)">
+                                    联想（lenovo）Y430P 14英寸游戏本电脑/y430p(i5-4210/4G/1T/高清 标配)
+                                </a>
+                                <span class="tg_pirce fl">¥4,799.00</span>
+                            </li>
+                            <li class="tg_li clearfix">
+                                <a href="" class="tg_pic fl">
+                                    <img src="img/1000788406_130.jpg" alt="">
+                                </a>
+                                <a href="" class="tg_con fl"title="联想（Lenovo） G40-70MA-IFI 14英寸笔记本电脑/G4070AT-ITH(i5-4210/2G独显磨砂黑 标配)">
+                                    联想（Lenovo） G40-70MA-IFI 14英寸笔记本电脑/G4070AT-ITH(i5-4210/2G独显磨砂黑 标配)
+                                </a>
+                                <span class="tg_pirce fl">¥3,499.00</span>
+                            </li>
+                            <li class="tg_li clearfix">
+                                <a href="" class="tg_pic fl">
+                                    <img src="img/1000801631_130.jpg" alt="">
+                                </a>
+                                <a href="" class="tg_con fl"title="联想(Lenovo) YOGA3 14-IFI 14英寸超极本YOGA314 2G独显(I5/4G/256橙色)">
+                                    联想(Lenovo) YOGA3 14-IFI 14英寸超极本YOGA314 2G独显(I5/4G/256橙色)
+                                </a>
+                                <span class="tg_pirce fl">¥6,499.00</span>
+                            </li>
+                            <li class="tg_li clearfix" style="border-bottom:none;">
+                                <a href="" class="tg_pic fl">
+                                    <img src="img/1000671858_130.jpg" alt="">
+                                </a>
+                                <a href="" class="tg_con fl"title="联想(Lenovo) YOGA3 14-IFI 14英寸超极本YOGA314 2G独显(I5/4G/256橙色)">
+                                    联想(Lenovo) YOGA3 14-IFI 14英寸超极本YOGA314 2G独显(I5/4G/256橙色)
+                                </a>
+                                <span class="tg_pirce fl">¥6,499.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tg"></div>
+                </aside>
+            </div>
+            <div class="zntj clearfix">
+                <div class="left_zjll fl">
+                    <h2 class="zjll">最近浏览</h2>
+                    <dl class="xh_list clearfix">
+                        <dt class="xh_left fl">
+                            <a href="" class="fl">
+                                <img src="img/1000787737_50.jpg" alt="">
+                            </a>
+                        </dt>
+                        <dd class="xh_right fr">
+                            <a href="" class="fl" title="华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色）
+                            华硕(ASUS)F554LP5200 15.6英寸笔记">华硕(ASUS)F554LP5200  15.6英寸笔记本电脑（i5-5200U 4GB内存 500G硬盘 2GB显卡 win8系统 黑色</a>
+                            <span class="xh_price fl">¥3399.00</span>
+                        </dd>
+                    </dl>
+                    <dl class="xh_list clearfix">
+                        <dt class="xh_left fl">
+                            <a href="" class="fl">
+                                <img src="img/1000757411_50.jpg" alt="">
+                            </a>
+                        </dt>
+                        <dd class="xh_right fr">
+                            <a href="" class="fl" title="Apple MacBook Air MJVE2CH/A 笔记本电脑">Apple MacBook Air MJVE2CH/A 笔记本电脑</a>
+                            <span class="xh_price fl">¥6588.00</span>
+                        </dd>
+                    </dl>
+                    <dl class="xh_list clearfix">
+                        <dt class="xh_left fl">
+                            <a href="" class="fl">
+                                <img src="img/1000413355_50.jpg" alt="">
+                            </a>
+                        </dt>
+                        <dd class="xh_right fr">
+                            <a href="" class="fl" title="尼康（Nikon）D7100套机（18-105MM f/3.5-5.6G ED VR镜头）此商品由上海直发，周日或节假日发货顺延，在您收到商品且订单状态完成后7个工作日内，国美在线将为您寄出相应的商品发票，给您带来不便，敬请谅解！">尼康（Nikon）D7100套机（18-105MM f/3.5-5.6G ED VR镜头）</a>
+                            <span class="xh_price fl">¥3399.00</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="cnxh fr">
+                    <h2 class="llxh fl">根据浏览猜你喜欢</h2>
+                    <i class="jiantou left_sj fl"></i>
+                    <ul class="cnxh_ul fl">
+                        <li class="cnxh_list fl">
+                            <a href="" class="cnxh_pic fl">
+                                <img src="img/1000706384_130.jpg" alt="">
+                            </a>
+                            <a href="" class="cnxh_con fl" title="宏基（acer）V5-471G 14英寸 超薄笔记本电脑（i3-3217U 2G 500G GT710 2G DVD）(酷睿i3-3217U 银色带光驱 官方标配)">九阳（Joyoung ）无网星系列DJ12B-A11DEC多功能无网全钢豆浆机（7大烹饪功能 集所有磨力于一身 多种口味满足你挑剔的味蕾）</a>
+                            <span class="cnxh_price fl">¥259.00</span>
+                        </li>
+                        <li class="cnxh_list fl">
+                            <a href="" class="cnxh_pic fl">
+                                <img src="img/1000119195_130.jpg" alt="">
+                            </a>
+                            <a href="" class="cnxh_con fl" title="西门子（SIEMENS)5TA01171CC133 远景双联双控带荧光开关（金棕色）开关面板 开关插座 墙壁开关 二开双控开关荧光">西门子（SIEMENS)5TA01171CC133 远景双联双控带荧光开关（金棕色）开关面板 开关插座 墙壁开关 二开双控开关荧光</a>
+                            <span class="cnxh_price fl">¥24.60</span>
+                        </li>
+                        <li class="cnxh_list fl">
+                            <a href="" class="cnxh_pic fl">
+                                <img src="img/1000752334_130.jpg" alt="">
+                            </a>
+                            <a href="" class="cnxh_con fl" title="格力(GREE) KFR-72GW/K(72556)A1-N1 3匹P壁挂式绿满园定频 冷暖电辅挂机空调 ">格力(GREE) KFR-72GW/K(72556)A1-N1 3匹P壁挂式绿满园定频 冷暖电辅挂机空调</a>
+                            <span class="cnxh_price fl">¥7199.00</span>
+                        </li>
+                        <li class="cnxh_list fl">
+                            <a href="" class="cnxh_pic fl">
+                                <img src="img/105025166_130.jpg" alt="">
+                            </a>
+                            <a href="" class="cnxh_con fl" title="创维（skyworth）47E760A彩电 47英寸 窄边框超薄LED电视">创维（skyworth）47E760A彩电 47英寸 窄边框超薄LED电视</a>
+                            <span class="cnxh_price fl">¥4398.00</span>
+                        </li>
+                        <li class="cnxh_list fl">
+                            <a href="" class="cnxh_pic fl">
+                                <img src="img/112127026_130.jpg" alt="">
+                            </a>
+                            <a href="" class="cnxh_con fl" title="宏基（acer）V5-471G 14英寸 超薄笔记本电脑（i3-3217U 2G 500G GT710 2G DVD）(酷睿i3-3217U 银色带光驱 官方标配)">宏基（acer）V5-471G 14英寸 超薄笔记本电脑（i3-3217U 2G 500G GT710 2G DVD）(酷睿i3-3217U 银色带光驱 官方标配)</a>
+                            <span class="cnxh_price fl">¥2799.00</span>
+                        </li>
+                    </ul>
+                    <i class="jiantou right_sj fl"></i>
+                </div>
+            </div>
+        </section>
+        <!--尾部 start-->
+        <footer class="gomeFoot">
+            <div class="footContent widthWrap">
+                <div class="foot_help clearfix">
+                    <ul class="shop_help fl">
+                        <li class="help_h4">
+                            <h4>购物帮助</h4>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">购物流程</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">忘记密码</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">账户安全</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">常见问题</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">联系我们</a>
+                        </li>
+                    </ul>
+                    <ul class="shop_help fl">
+                        <li class="help_h4">
+                            <h4>支付帮助</h4>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">货到付款</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">在线支付</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">分期付款</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">公司转账</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">发票制度</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">门店支付</a>
+                        </li>
+                    </ul>
+                    <ul class="shop_help fl">
+                        <li class="help_h4">
+                            <h4>配送帮助</h4>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">配送查询</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">配送说明</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">配送费用</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">签收与验货</a>
+                        </li>
+                    </ul>
+                    <ul class="shop_help fl">
+                        <li class="help_h4">
+                            <h4>售后帮助</h4>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">退换货服务</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">退款说明</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">家电保养</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">延保服务</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">远程服务</a>
+                        </li>
+                    </ul>
+                    <ul class="shop_help fl">
+                        <li class="help_h4">
+                            <h4>国美优惠</h4>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">淘实惠</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">抢购攻略</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">团购攻略</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">预约购买</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">预售购买</a>
+                        </li>
+                    </ul>
+                    <ul class="shop_help fl">
+                        <li class="help_h4">
+                            <h4>会员专区</h4>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">会员介绍</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">积分说明</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">优惠券说明</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">电子券</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">国美社区</a>
+                        </li>
+                    </ul>
+                    <ul class="shop_help fl">
+                        <li class="help_h4">
+                            <h4>国美服务</h4>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">价格保护</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">上门安装</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">家电维修</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">家电回收</a>
+                        </li>
+                        <li class="help_content">
+                            <a href="javascript:;">集团采购</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_baozhang clearfix">
+                    <strong class="one_strong fl">28年专业品质</strong>
+                    <strong class="two_strong fl">最国美 最实惠</strong>
+                    <strong class="three_strong fl" style="margin-right:81px;">心服务 新体验</strong>
+                </div>
+                <div class="foot_link">
+                    <span class="link_content clearfix">
+                        <a href="javascript:;" class="friend_link fl">商家入驻</a>
+                        <i class="fl"></i>
+                        <a href="javascript:;" class="friend_link fl">销售联盟</a>
+                        <i class="fl"></i>
+                        <a href="javascript:;" class="friend_link fl">关于国美在线</a>
+                        <i class="fl"></i>
+                        <a href="javascript:;" class="friend_link fl">企业大客户</a>
+                        <i class="fl"></i>
+                        <a href="javascript:;" class="friend_link fl">首页用户体验调研</a>
+                        <i class="fl"></i>
+                        <a href="javascript:;" class="friend_link fl">友情链接</a>
+                        <i class="fl"></i>
+                        <a href="javascript:;" class="friend_link fl">手机国美</a>
+                        <i class="fl"></i>
+                        <a href="javascript:;" class="friend_link fl">热门搜索</a>
+                        <i class="fl"></i>
+                        <a href="javascript:;" class="friend_link fl">商品专题</a>
+                        <i class="fl"></i>
+                        <a href="javascript:;" class="friend_link fl">品牌大全</a>
+                    </span>
+                </div>
+                <div class="gome_jituan">
+                    <span class="jituan_link clearfix">
+                        <i class="fl"></i>
+                        <a href="javascript:;" class="jituan_content fl">国美集团</a>
+                        <a href="javascript:;" class="sub_jituan  fl">店面导航图</a>
+                        <a href="javascript:;" class="sub_jituan fl">多边金都</a>
+                    </span>
+                </div>
+                <div class="xin"></div>
+                <div class="copyright clearfix">
+                    <span class="fl">©2000-2015</span>
+                    <span class="fl">国美在线电子商务有限公司</span>
+                    <span class="fl">版权所有</span>
+                    <span class="fl">京公网安备11010502027062</span>    
+                    <span class="fl">沪ICP备11009419号</span>    
+                    <span class="fl">沪B2-20120004号</span>
+                </div>
+                <div class="beian_etc clearfix">
+                    <a href="javascript:;" class="fl">
+                        <img src="img/124_35_zZOKnl.gif" alt="">
+                    </a>
+                    <a href="javascript:;" class="fl">
+                        <img src="img/124_35_kywzxypj.gif" alt="">
+                    </a>
+                    <a href="javascript:;" class="fl">
+                        <img src="img/124_35_cxwz.gif" alt="">
+                    </a>
+                    <a href="javascript:;" class="fl">
+                        <img src="img/124_35_hdwljc.gif" alt="">
+                    </a>
+                    <a href="javascript:;" class="fl">
+                        <img src="img/124_35_jnzq.gif" alt="">
+                    </a>
+                </div>
+                <a class="phone_ewm" href="javascript:;"></a>
+            </div>
+        </footer>
+        <!-- 右侧固定条start -->
+        <ul class="fixed_bar">
+            <li class="style_one clearfix">
+                <a href="javascript:;" class="fl">
+                    <i></i>
+                </a>
+            </li>   
+            <li class="style_two clearfix">
+                <a href="javascript:;" class="fl">
+                    <i></i>
+                </a>
+            </li>   
+            <li class="style_three clearfix">
+                <a href="javascript:;" class="fl">
+                    <i></i>
+                </a>
+            </li>   
+            <li class="style_four clearfix">
+                <a href="javascript:;" class="fl">
+                    <i></i>
+                </a>
+            </li>   
+            <li class="style_five clearfix">
+                <a href="javascript:;" class="fl">
+                    <i></i>
+                </a>
+            </li>   
+            <li class="style_six clearfix">
+                <a href="javascript:;" class="fl">
+                    <i></i>
+                </a>
+            </li>   
+        </ul>
+</body>
+</html>
