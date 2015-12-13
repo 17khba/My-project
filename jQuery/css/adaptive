@@ -1,0 +1,553 @@
+/*reset css*/
+body,p,pre{margin: 0;}
+i{font-style: normal;}
+b,strong{font-weight: normal;}
+ul{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{display: block;}
+input{border: none;}
+button{padding:0; border: 0;}
+h1,h2,h3,h4,h5,h6{margin: 0;}
+table{border-collapse: collapse; border-spacing: 0;}
+td{padding: 0;}
+cite{font-style: normal;}
+/*复用样式*/
+.clearfix{
+    *zoom:1;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*独立样式*/
+header{
+    width: 100%;
+    height: 34px;
+    background-color: #0769AD;
+}
+.nav_one{
+    width: 100%;
+    height: 34px;
+    background: url(../img/jq-global-nav.png) repeat-x 0 bottom;
+}
+.nav_top{
+    max-width: 1200px;
+    height: 34px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.nav_left{
+    width: 200px;
+    border-right: 1px solid rgba(0,0,0,0.35);
+}
+.projects_link{
+    width: 39px;
+    height: 34px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.link_one{
+    background: url(../img/jq-nav-icons.png) no-repeat -7px -40px;
+    margin-top: 5px;
+}
+.link_two{
+    background: url(../img/jq-nav-icons.png) no-repeat -57px 0;
+}
+.link_three{
+    border-left: 1px solid rgba(0,0,0,0.35);
+    background: url(../img/jq-nav-icons.png) no-repeat -107px 0;
+}
+.link_four{
+    border-left: 1px solid rgba(0,0,0,0.35);
+    background: url(../img/jq-nav-icons.png) no-repeat -156px 0;
+}
+.link_five{
+    border-left: 1px solid rgba(0,0,0,0.35);
+    background: url(../img/jq-nav-icons.png) no-repeat -205px 0;
+}
+.nav_right{
+    width: 435px;
+    border-right: 1px solid rgba(0,0,0,0.35);
+}
+.sort_list{
+    border-left: 1px solid rgba(0,0,0,0.35);
+}
+.sort_list:hover{
+    background: url(../img/bg-footer-noise.jpg);
+}
+.sort_link{
+    padding: 0 10px;
+    font: 14px/34px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    text-shadow: 0 0 2px #000;
+    color: #e6e6e6;
+}
+.content_box{
+    padding: 0 20px 20px;
+    background-color: #0769AD;
+    margin-bottom: -30px;
+}
+.logo_sec{
+    border-top: 1px solid #7ACEF4;
+    background-color: #0769AD;
+}
+.logo{
+    max-width: 1200px;
+    height: 100px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #0769AD;
+}
+.logo_left{
+    width: 243px;
+    margin-top: 17px;
+}
+.logo_right{
+    width: 400px;
+}
+.sub_nav{
+    max-width: 1198px;
+    border-radius: 8px 8px 0 0;
+    border-top: 1px solid rgba(255,255,255,.3);
+    border-right: 1px solid rgba(2,2,2,.3);
+    border-left: 1px solid rgba(2,2,2,.3);
+    height: 53px;
+    padding: 0 20px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,.2);
+    box-shadow: 0 0 2px 1px rgba(0,0,0,.5);
+}
+.sub_ul{
+    width: 61%;
+    height: 53px;
+}
+.sub_list{
+    height: 44px;
+}
+.sub_link{
+    padding: 0 10px;
+    font: bold 16px/53px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    color: #fff;
+}
+.sub_form{
+    display: none;
+}
+.search{
+    width: 28%;
+    height: 29px;
+    border-radius: 20px;
+    margin-top: 14px;
+    box-shadow: inset 0 0 4px 2px rgba(0,0,0,.3);
+}
+.search_text{
+    width: 73%;
+    height: 15px;
+    font: 12px/15px "Arial";
+    padding: 2px 0 2px 10px;
+    margin: 5px 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0);
+    outline: none;
+} 
+.search_text::-webkit-input-placeholder{
+    color: #fff;
+}
+.shuxian{
+    height: 15px;
+    border-right: 1px solid rgba(0,0,0,.3);
+    margin-top: 7px;
+}
+.search_btn{
+    width: 8%;
+    margin: 8px 8px 5px 8px;
+    background: url(../img/search.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.content{
+    position: relative;
+    max-width: 1200px;
+    height: auto;
+    padding: 0 20px 20px;
+    border-radius: 0 0 8px 8px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.wrap{
+    width: 100%;
+    padding: 0 20px;
+    box-shadow: 1px 0 1px 0 rgba(0,0,0,.5),inset 1px 0 1px 0 rgba(0,0,0,.5); 
+    margin-left: -20px;
+    background: url(../img/dark-grey-tile.png);
+}
+.wrap_ul{
+    width: 60%;
+    margin: 27px 0 0 60px;
+}
+.wrap_list{
+    width: 33.33%;
+    margin-top: 20px;
+}
+.download{
+    width: 30%;
+    margin-top: 27px;
+}
+.wrap_one{
+    display: block;
+    width: 119px;
+    height: 107px;
+    margin: 0 auto;
+    background: url(../img/feature-sprites.png) no-repeat;
+}
+.wrap_two{
+    display: block;
+    width: 119px;
+    height: 107px;
+    margin: 0 auto;
+    background: url(../img/feature-sprites.png) no-repeat -139px 0;
+}
+.wrap_three{
+    display: block;
+    width: 119px;
+    height: 107px;
+    margin: 0 auto;
+    background: url(../img/feature-sprites.png) no-repeat -279px 0;
+    transition: 3s;
+}
+.wrap_three:hover{
+    -webkit-transform: rotate(360deg);
+}
+.wrap_list strong{
+    display: block;
+    max-width: 206px;
+    font: bold 20px/40px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    text-align: center;
+    color: #7ACEF4;
+    margin: 0 auto;
+}
+.wrap_list p{
+    max-width: 206px;
+    font: 8px/12px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    color: #ccc;
+}
+.download_link{
+    display: block;
+    width: 92%;
+    height: auto;
+    text-align: center;
+    padding: 10px 10px;
+    font: 30px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    color: #fff;
+    background-color: #d18f4f;
+}
+.download_pic{
+    position: relative;
+    top: 0.5em;
+    display: inline-block;
+    width: 48px;
+    height: 37px;
+    background: url(../img/download.png) no-repeat 0 0;
+}
+.download_version{
+    display: block;
+    width: 100%;
+    color: #fff;
+    font: bold 15px/15px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    margin: 0 auto;
+}
+.download_one,.download_two{
+    display: block;
+    width: 90%;
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+.download_one:hover,.download_two:hover{
+    text-decoration: none;
+}
+.jieshao{
+    width: 100%;
+}
+.what{
+    width: 63.666%;
+    padding: 0 1.5%;
+    margin: 20px 0 0;
+}
+.what_JQ,.members,.other,.code_tit{
+    font: bold 24px/40px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    padding-left: 15px;
+    color: #333;
+    background: url(../img/gauze.png);
+}
+.JQ_content,.members_cont{
+    font: 15px/23px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    word-break: keep-all;
+    margin-top: 10px;
+    color: #333;
+}
+.members{
+    margin-top: 20px;
+}
+.membders_ul{
+    width: 94%;
+    padding: 10px 2.5% 20px;
+}
+.members_list{
+    position: relative;
+    display: table;
+    width: 25%;
+    height: 150px;
+    text-align: center;
+    overflow: hidden;
+}
+.members_list .members_link{
+    display:table-cell;
+    padding:0 17px;
+    text-align:center; 
+    vertical-align:middle;
+}
+.members_link img{
+    max-width: 144px;
+    width: 100%; 
+    vertical-align:top;
+}
+.other{
+    margin-top: 20px;
+}
+.other_ul{
+    margin-top: 10px;
+}
+.other_pic img{
+    max-width: 381px;
+    width: 100%;
+}
+.resources{
+    width: 27.33%;
+    padding: 0 1.5%;
+    margin: 20px 0;
+}
+.resources_tit{
+    font: 20px/20px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    color: #666;
+}
+.resources_ul{
+    padding: 20px 7%;
+}
+.resources_list{
+    padding: 0 7% 10px;
+    background: url(../img/bullet.png) no-repeat left center;
+}
+.resources_link{
+    color: #B24926;
+    text-decoration: underline;
+}
+.resources_link:hover{
+    color: #333;
+    text-decoration: none;
+}
+.pic_link{
+    display: block;
+    width: 277px;
+    height: 126px;
+    background: url(../img/try-jquery.jpg) no-repeat;
+    background-size: 100%;
+    max-width: 100%;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.code_sec{
+    width: 100%;
+    margin-top: 20px;
+}
+.code_section{
+    width: 95%;
+    padding: 0 1.5%;
+    margin: 0 auto;
+}
+.sub_tit{
+    font: bold 20px/30px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    margin-top: 7px;
+    color: #666;
+}
+.code_con{
+    font: 15px/30px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    word-spacing: 2px;
+}
+code{
+    display: inline-block;
+    font: 13px/20px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    border-radius: 4px;
+    padding: 0 0.2em;
+    background-color: #eee;
+}
+.code_location{
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+    background-color: #eee;
+}
+.code_one{
+    font: 15px/20px "source-code-pro", Consolas, monospace;
+}
+.code_cellone{
+    padding: 0 4px;
+    border-right: 2px solid gray;
+}
+.code_celltwo{
+    padding-left: 10px;
+    color: #333;
+    font: 14px "source-code-pro", Consolas, monospace;
+}
+.code_text{
+    color: #c00;
+}
+.b_text{
+    font-weight: bold;
+}
+.number{
+    color: #099;
+}
+footer{
+    width: 100%;
+    background: url(../img/bg-footer-noise.jpg);
+}
+.foot{
+    width: 94%;
+    padding: 0 20px;
+    padding-top: 37px;
+    margin: 0 auto;
+}
+.books{
+    position: relative;
+    width: 50%;
+    height: 9px;
+    border: 1px solid rgba(0,0,0,.3);
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.books span{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -110%;
+    padding: 0 4px;
+    margin-left: -27px;
+    color: #777;
+    background: url(../img/bg-footer-noise.jpg);
+}
+.foot_ul{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.foot_list{
+    float: left;
+    width: 26.5%;
+    padding: 0 3.4%;
+}
+.foot_link{
+    display: block;
+    font: 12px/16px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+.foot_link img{
+    margin: 0 auto;
+    width: 92px;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 4px;
+    height: 114px;
+}
+.foot_link:hover img{
+    border: 1px solid #fff;
+}
+.foot_link cite{
+    display: block;
+    color: #aaa;
+}
+.foot_bottom{
+    width: 96%;
+    padding: 20px 0;
+    border-top: 1px solid rgba(3,3,3,.5);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.other_con{
+    width: 50%;
+    text-align: right;
+}
+.other_con .oth_list{
+    display: inline-block;
+}
+.other_link{
+    display: block;
+    font: 15px/21px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    padding-left: 27px;
+    margin-left: 20px;
+    color: #aaa;
+}
+.other_link:hover{
+    color: #fff;
+}
+.oth_zero{
+    background: url(../img/ico.png) no-repeat;
+}
+.oth_one{
+    background: url(../img/ico.png) no-repeat 0 -22px;
+}
+.oth_two{
+    background: url(../img/ico.png) no-repeat 0 -44px;
+}
+.oth_three{
+    background: url(../img/ico.png) no-repeat 0 -66px;
+}
+.oth_four{
+    background: url(../img/ico.png) no-repeat 0 -88px;
+}
+.oth_five{
+    background: url(../img/ico.png) no-repeat 0 -108px;
+}
+.auther{
+    width: 353px;
+    font: 12px/21px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    color: #777;
+}
+.aut_cont{
+    color: #aaa;
+}
+.copyright{
+    width: 353px;
+}
+.copy_bottom{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.copy_list{
+    display: inline-block;
+    font: 12px/16px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    padding: 0 2px;
+    color: #aaa;
+}
+.copy_list img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.copy_bottom b{
+    font: 12px/16px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    color: #777;
+}
+.auther a:hover,.copy_bottom a:hover{
+    color: #fff;
+}
