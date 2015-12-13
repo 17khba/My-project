@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自适应</title>
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="nav_one clearfix">
+            <div class="nav_top">
+                <ul class="nav_left fl">
+                    <li class="projects_list fl">
+                        <a href="" class="link_one projects_link fl">JQuary</a>
+                    </li>
+                    <li class="projects_list fl">
+                        <a href="" class="link_two projects_link fl">JQuary UI</a>
+                    </li>
+                    <li class="projects_list fl">
+                        <a href="" class="link_three projects_link fl">JQuary mobile</a>
+                    </li>
+                    <li class="projects_list fl">
+                        <a href="" class="link_four projects_link fl">JQuary</a>
+                    </li>
+                    <li class="projects_list fl">
+                        <a href="" class="link_five projects_link fl">JQuary</a>
+                    </li>
+                </ul>
+                <ul class="nav_right fr clearfix">
+                    <li class="sort_list fl">
+                        <a href="" class="sort_link fl">Plugins who</a>
+                    </li>
+                    <li class="sort_list fl">
+                        <a href="" class="sort_link fl">Plugins</a>
+                    </li>
+                    <li class="sort_list fl">
+                        <a href="" class="sort_link fl">Plugins why</a>
+                    </li>
+                    <li class="sort_list fl">
+                        <a href="" class="sort_link fl">Plugins</a>
+                    </li>
+                    <li class="sort_list fl">
+                        <a href="" class="sort_link fl">Plugins which</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- logo部分 -->
+    <section class="logo_sec">
+        <div class="logo clearfix">
+            <a href="" class="logo_left fl">
+                <img src="img/logo-jquery.png" alt="">
+            </a>
+            <a href="" class="logo_right fr">
+                <img src="img/cef712b199484df2b5f0c80cf41fd48d.png" alt="">
+            </a>
+        </div>
+    </section>
+    <section class="content_box">
+        <!-- sub_nav部分 -->
+        <nav class="sub_nav clearfix">
+            <ul class="sub_ul fl">
+                <li class="sub_list fl">
+                    <a href="" class="sub_link fl">Download</a>
+                </li>
+                <li class="sub_list fl">
+                    <a href="" class="sub_link fl">API Documentation</a>
+                </li>
+                <li class="sub_list fl">
+                    <a href="" class="sub_link fl">Blog</a>
+                </li>
+                <li class="sub_list fl">
+                    <a href="" class="sub_link fl">Download</a>
+                </li>
+                <li class="sub_list fl">
+                    <a href="" class="sub_link fl">API</a>
+                </li>
+                <li class="sub_list fl">
+                    <a href="" class="sub_link fl">Blog</a>
+                </li>
+            </ul>
+            <form action="" class="sub_form fl">
+                <select name="" id="" class="sel_list">
+                    <option value="">Download</option>
+                    <option value="">API Documentation</option>
+                    <option value="">Blog</option>
+                    <option value="">Download</option>
+                    <option value="">API</option>
+                    <option value="">Blog</option>
+                </select>
+            </form>
+            <form action="" class="search fr">
+                <button class="search_btn fr">search</button>
+                <i class="shuxian fr"></i>
+                <label for="" id="search_text fl">
+                    <input type="text" id="search_text" class="search_text" placeholder="Search">
+                </label>
+            </form>
+        </nav>
+        <!-- content部分 -->
+        <div class="content">
+            <!-- wrap部分 -->
+            <div class="wrap clearfix">
+                <div class="download fr">
+                    <a href="" class="download_link">
+                        <b class="download_pic"></b>
+                        Download jQuery
+                        <span class="download_version">v1.11.3 or v2.1.4</span>
+                    </a>
+                    <a href="" class="download_one">View Source on GitHub →</a>
+                    <a href="" class="download_two">How jQuery Works →</a>
+                </div>
+                <ul class="wrap_ul fl">
+                    <li class="wrap_list fl">
+                        <div class="wrap_one"></div>
+                        <strong class="">Lightweight Footprint</strong>
+                        <p class="">Only 32kB minified and gzipped. Can also be included as an AMD module</p>
+                    </li>
+                    <li class="wrap_list fl">
+                        <div class="wrap_two"></div>
+                        <strong class="">Lightweight Footprint</strong>
+                        <p class="">Only 32kB minified and gzipped. Can also be included as an AMD module</p>
+                    </li>
+                    <li class="wrap_list fl">
+                        <div class="wrap_three"></div>
+                        <strong class="">Lightweight Footprint</strong>
+                        <p class="">Only 32kB minified and gzipped. Can also be included as an AMD module</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- 介绍部分 -->
+            <section class="jieshao clearfix">
+                <div class="what fl">
+                    <h2 class="what_JQ">What is jQuery?</h2>
+                    <p class="JQ_content">
+                        jQuery is a fast, small, and feature-rich JavaScript library. It makes
+                        things like HTML document traversal and manipulation, event handling,
+                        animation, and Ajax much simpler with an easy-to-use API that works across
+                        a multitude of browsers. With a combination of versatility and
+                        extensibility, jQuery has changed the way that millions of people write
+                        JavaScript.
+                    </p>
+                    <h2 class="members">Corporate Members</h2>
+                    <ul class="membders_ul clearfix">
+                        <li class="members_list men_one fl">
+                            <a href="" class="members_link">
+                                <img src="img/mediatemple.png" alt="">
+                            </a>
+                        </li>
+                        <li class="members_list men_two fl">
+                            <a href="" class="members_link">
+                                <img src="img/maxcdn.png" alt="">
+                            </a>
+                        </li>
+                        <li class="members_list men_three fl">
+                            <a href="" class="members_link">
+                                <img src="img/wordpress.png" alt="">
+                            </a>
+                        </li>
+                        <li class="members_list men_four fl">
+                            <a href="" class="members_link">
+                                <img src="img/neobux.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="members_cont">
+                        Support from our corporate members makes it possible for the jQuery
+                        Foundation to continue our work on our JavaScript libraries and pushing
+                        the open web forward with events and participation in the standards process.
+                        View our members page  for a full list of corporate and individual members.
+                    </p>
+                    <h2 class="other">Other jQuery Foundation Projects</h2>
+                    <ul class="other_ul clearfix">      
+                        <li class="other_list fl">
+                            <a href="" class="other_pic fl">
+                                <img src="img/jq_one.png" alt="">
+                            </a>
+                        </li>
+                        <li class="other_list fl">
+                            <a href="" class="other_pic fl">
+                                <img src="img/jq_two.png" alt="">
+                            </a>
+                        </li>
+                        <li class="other_list fl">
+                            <a href="" class="other_pic fl">
+                                <img src="img/jq_three.png" alt="">
+                            </a>
+                        </li>
+                        <li class="other_list fl">
+                            <a href="" class="other_pic fl">
+                                <img src="img/jq_four.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <aside class="resources fr">
+                    <h3 class="resources_tit">Resources</h3>
+                    <ul class="resources_ul">
+                        <li class="resources_list">
+                            <a href="" class="resources_link">jQuery Core API Documentation</a>
+                        </li>
+                        <li class="resources_list">
+                            <a href="" class="resources_link">jQuery Learning Center</a>
+                        </li>
+                        <li class="resources_list">
+                            <a href="" class="resources_link">jQuery Blog</a>
+                        </li>
+                        <li class="resources_list">
+                            <a href="" class="resources_link">Contribute to jQuery</a>
+                        </li>
+                        <li class="resources_list">
+                            <a href="" class="resources_link">About the jQuery Foundation</a>
+                        </li>
+                        <li class="resources_list">
+                            <a href="" class="resources_link">Browse or Submit jQuery Bugs</a>
+                        </li>
+                        <li class="resources_pic">
+                            <a href="" class="pic_link">Try jQuery</a>
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+            <!-- 代码块 -->
+            <section class="code_sec">
+                <div class="code_section">
+                    <h2 class="code_tit">A Brief Look</h2>
+                    <h3 class="sub_tit">DOM Traversal and Manipulation</h3>
+                    <p class="code_con">
+                        Get the <code>&lt;button&gt;</code> element with the class 'continue' and change its HTML to 'Next Step...'
+                    </p>
+                    <div class="code_location">
+                        <table class="code_one">
+                            <tbody class="code_body">
+                                <tr class="code_row">
+                                    <td class="code_cellone">1</td>
+                                    <td class="code_celltwo">
+                                        <pre>$( <code class="code_text">&quot;button.continue&quot;</code> ).html( <code class="code_text">&quot;Next Step...&quot;</code> )</pre>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h3 class="sub_tit">Event Handling</h3>
+                    <p class="code_con">
+                        Show the <code>#banner-message</code> element that is hidden with  <code>display:none</code> in its CSS when any button in <code>#button-container</code> is clicked.
+                    </p>
+                    <div class="code_location">
+                        <table class="code_one">
+                            <tbody class="code_body">
+                                <tr class="code_row">
+                                    <td class="code_cellone">1</td>
+                                    <td class="code_celltwo">
+                                        <pre><b class="b_text">var</b> hiddenBox = $( <code class="code_text">&quot;#banner-message&quot;</code> );</pre>
+                                    </td>
+                                </tr>
+                                <tr class="code_row">
+                                    <td class="code_cellone">2</td>
+                                    <td class="code_celltwo">
+                                        <pre>$( <code class="code_text">&quot;#button-container button&quot;</code> ).on( <code class="code_text">&quot;click&quot;</code>, <b class="b_text">function</b>( event ) {</pre>
+                                    </td>
+                                </tr>
+                                <tr class="code_row">
+                                    <td class="code_cellone">3</td>
+                                    <td class="code_celltwo">
+                                        <pre>   hiddenBox.show();</pre>
+                                    </td>
+                                </tr>
+                                <tr class="code_row">
+                                    <td class="code_cellone">4</td>
+                                    <td class="code_celltwo">
+                                        <pre>});</pre>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h3 class="sub_tit">Ajax</h2>
+                    <p class="code_con">
+                        Call a local script on the server <code>/api/getWeather</code> with the query parameter <code>zipcode=97201</code> and replace the element <code>#weather-temp's</code> html with the returned text.
+                    </p>
+                    <div class="code_location">
+                        <table class="code_one scroll_three">
+                            <tbody class="code_body">
+                                <tr class="code_row">
+                                    <td class="code_cellone">1</td>
+                                    <td class="code_celltwo">
+                                        <pre>$.ajax({</pre>
+                                    </td>
+                                </tr>
+                                <tr class="code_row">
+                                    <td class="code_cellone">2</td>
+                                    <td class="code_celltwo">
+                                        <pre>   url:<code class="code_text">&quot;/api/getWeather&quot;</code>, </pre>
+                                    </td>
+                                </tr>
+                                <tr class="code_row">
+                                    <td class="code_cellone">3</td>
+                                    <td class="code_celltwo">
+                                        <pre>   data: {</pre>
+                                    </td>
+                                </tr>
+                                <tr class="code_row">
+                                    <td class="code_cellone">4</td>
+                                    <td class="code_celltwo">
+                                        <pre>  zipcode: <span class="number">97201</span></pre>
+                                    </td>
+                                </tr>
+                                <tr class="code_row">
+                                    <td class="code_cellone">5</td>
+                                    <td class="code_celltwo">
+                                        <pre>   },</pre>
+                                    </td>
+                                </tr>
+                                <tr class="code_row">
+                                    <td class="code_cellone">6</td>
+                                    <td class="code_celltwo">
+                                        <pre>   success: <b class="b_text">function</b>( data ) {</code> </pre>
+                                    </td>
+                                </tr>
+                                <tr class="code_row">
+                                    <td class="code_cellone">7</td>
+                                    <td class="code_celltwo">
+                                        <pre>       $( <code class="code_text">&quot;#weather-temp&quot;</code> ).html( <code class="code_text">&quot;&lt;strong&gt;&quot; </code>+ data + <code class="code_text">&quot;&lt;/strong&gt; degrees&quot;</code> );</pre>
+                                    </td>
+                                </tr>
+                                <tr class="code_row">
+                                    <td class="code_cellone">8</td>
+                                    <td class="code_celltwo">
+                                        <pre>   }</pre>
+                                    </td>
+                                </tr>
+                                <tr class="code_row">
+                                    <td class="code_cellone">9</td>
+                                    <td class="code_celltwo">
+                                        <pre>});</pre>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </section>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <h3 class="books">
+                <span>BOOKS</span>
+            </h3>
+            <ul class="foot_ul clearfix">
+                <li class="foot_list">
+                    <a href="" class="foot_link">
+                        <img src="img/learning-jquery-4th-ed.jpg" alt="">
+                        Learning jQuery Fourth Edition
+                        <cite>Karl Swedberg and Jonathan Chaffer</cite>
+                    </a>
+                </li>
+                <li class="foot_list">
+                    <a href="" class="foot_link">
+                        <img src="img/jquery-in-action.jpg" alt="">
+                        Learning jQuery Fourth Edition
+                        <cite>Karl Swedberg and Jonathan Chaffer</cite>
+                    </a>
+                </li>
+                <li class="foot_list">
+                    <a href="" class="foot_link">
+                        <img src="img/jquery-succinctly.jpg" alt="">
+                        Learning jQuery Fourth Edition
+                        <cite>Karl Swedberg and Jonathan Chaffer</cite>
+                    </a>
+                </li>
+            </ul>
+            <div class="foot_bottom clearfix">
+                <ul class="other_con fr">
+                    <li class="oth_list ">
+                        <a href="" class="other_link oth_zero" style="margin-left: 0;">Learning Center</a>
+                    </li>
+                    <li class="oth_list">
+                        <a href="" class="other_link oth_one">Forum</a>
+                    </li>
+                    <li class="oth_list">
+                        <a href="" class="other_link oth_two">API</a>
+                    </li>
+                    <li class="oth_list">
+                        <a href="" class="other_link oth_three">Twitter</a>
+                    </li>
+                    <li class="oth_list">
+                        <a href="" class="other_link oth_four">IRC</a>
+                    </li>
+                    <li class="oth_list">
+                        <a href="" class="other_link oth_five">GitHub</a>
+                    </li>            <!--  重复代码 -->
+                </ul> 
+                <div class="copyright fl">
+                    <address class="auther">
+                        copyright2015 <a href="" class="aut_cont">The jQuery Foundation.
+                        </a><a href="" class="aut_cont">jQuery License</a>
+                    </address>
+                    <span class="copy_bottom">
+                        <a href="" class="copy_list">
+                            <img src="img/logo-mediatemple.png" alt="">Web hosting by Media Temple |
+                        </a>
+                        <a href="" class="copy_list">
+                            <img src="img/logo-maxcdn.png" alt="">CDN by MaxCDN |
+                        </a>
+                        <a href="" class="copy_list">
+                            <img src="img/logo-wordpress.png" alt="">Powered by WordPress |
+                        </a>
+                        <b>Thanks:</b>
+                        <a href="" class="copy_list">
+                            Members,
+                        </a>
+                        <a href="" class="copy_list">
+                            Sponsors
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
