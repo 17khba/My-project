@@ -1,0 +1,497 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
+/*----------------reset css--------------*/
+body{margin: 0; height: 100%; overflow: auto;}
+h1,h2,h3,h4,h5,h6,p{margin: 0;}
+a{text-decoration: none;}
+ul{margin: 0;padding: 0;}
+li{list-style: none;}
+img{display: block;}
+strong{font-weight:normal;}
+i{font-style: normal;}
+mark{background-color: #fff;}
+a{-webkit-tap-highlight-color:transparent;}
+input{-webkit-appearance:none;}
+/*----------------公共样式-----------------*/
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.bb_e6{
+    border-bottom: 0.6rem solid #f2f2f2;
+}
+/*----------------独立样式----------------*/
+.head_box{
+    width: 16rem;
+    margin: 0 auto;
+}
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2.63985rem;
+    padding: 0 0.6rem;
+    background-color: #ef3030;
+    z-index: 999;
+}
+header h1{
+    margin: 0.72rem 0.4rem 0 0;
+}
+.logo img{
+    width: 2.575rem;
+}
+header .search_form{
+    position: relative;
+}
+.search_form a{
+    position: absolute;
+    top: 0.85rem;
+    right: 1rem;
+}
+.search_form img{
+    width: 0.95rem;
+    cursor: pointer;
+}
+.search_form .search_bar{
+    width: 9.08rem;
+    height: 1.92rem;
+    font: 0.7rem/1.92rem "Microsoft YaHei", "Arial", "Helvetica";
+    padding-left: 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    margin: 0.359rem 0.4rem 0 0;
+    background: rgba(255,255,255,.9);
+}
+header .user_login{
+    font: 0.6rem/2.638rem "Microsoft YaHei", "Arial", "Helvetica";
+    color: #fff;
+}
+section{
+    margin-top: 2.63985rem;
+}
+@-webkit-keyframes move{
+	0%{
+		-webkit-transform: translateX(0rem);
+	}
+	16.66%{
+		-webkit-transform: translateX(-16rem);
+	}
+	33.32%{
+		-webkit-transform: translateX(-16rem);
+	}
+    49.98%{
+        -webkit-transform: translateX(-32rem);
+    }
+    66.64%{
+        -webkit-transform: translateX(-32rem);
+    }
+    83.3%{
+        -webkit-transform: translateX(-48rem);
+    }
+    99.96%{
+        -webkit-transform: translateX(-48rem);
+    }
+}
+#boxID{
+    width: 16rem;
+}
+#boxID .pic{
+	overflow: hidden;
+}
+.box{
+    width: 16rem;
+    margin: 2.63985rem auto 0;
+}
+.pic .lbt_ul{
+	width: 96rem;;
+	-webkit-animation: 24s move infinite linear;
+	overflow: hidden;
+}
+.pic:hover ul{
+	-webkit-animation-play-state: paused;
+}
+.lbt_list img{
+    width: 16rem;
+}
+.box .quick_nav{
+    width: 15.44rem;
+    padding: 0.6rem 0.284rem;
+}
+.quick_nav .nav_list{
+    width: 3.8578rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+.nav_list img{
+    width: 2.05rem;
+    margin: 0 auto;
+}
+.nav_list span{
+    font: 0.6rem/0.7rem "Microsoft YaHei", "Arial", "Helvetica";
+    color: rgb(102,102,102);
+}
+.box .activity{
+    width: 15.5rem;
+    padding: 0.5rem 0.25rem; 
+    background-color: #f2f2f2;
+}
+.activity .act_two{
+    margin: 0 0.16rem;
+}
+.act_one img,.act_two img,.act_three img{
+    width: 5.05rem;
+}
+.box .zszx{
+    width: 16rem;
+    height: 14.925rem;
+}
+.zszx .zszx_top{
+    width: 100%;
+    height: 4.91955rem;
+    margin-top: 1rem;
+}
+.zszx_top img{
+    width: 4rem;
+    margin: 0 1rem;
+}
+.zszx_top h2{
+    width: 9.9625rem;
+    font: 0.85rem/0.85rem "Microsoft YaHei", "Arial", "Helvetica";
+    color: rgb(51,153,255);
+}
+.zszx_top .zszx_price{
+    width: 9.9625rem;
+    margin-top: 0.5rem;
+}
+.zszx_price .price_one{
+    font: 0.8rem/1rem "Microsoft YaHei", "Arial", "Helvetica";
+    color: #333;
+    margin-right: 0.6rem;
+}
+.zszx_price .price_two{
+    position: relative;
+    width: 4.72rem;
+    height: 1rem;
+    padding: 0 0.2rem;
+    font: 0.6rem/1rem "Microsoft YaHei", "Arial", "Helvetica";
+    color: #fff;
+    background-color: rgb(51,153,255);
+}
+.price_two .left_sj{
+    position: absolute;
+    top: 0.2rem;
+    left: -0.6rem;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border: 0.3rem solid #fff;
+    border-right-color: #39f;
+    z-index: 1;
+}
+.zszx_top .haixin{
+    font: 0.6rem/1.2rem "Microsoft YaHei", "Arial", "Helvetica";
+    color: rgb(170,170,170);
+}
+.zszx .zszx_bottom{
+    height: 8.25845rem;
+    border-top: 0.025rem solid #e6e6e6; 
+}
+.zszx_bottom .zszx_ul{
+    position: relative;
+    width: 5.316665rem;
+    height: 100%;
+    border-bottom: 0.75rem solid #f2f2f2;
+}
+.zszx_ul .zgm_li{
+    padding: 0.6rem 0.42rem 0 0.5rem;
+}
+.zgm_li h4{
+    font: 0.75rem/0.9rem "Microsoft YaHei", "Arial", "Helvetica";
+    color: rgb(239,48,48);
+}
+.zgm_li .zgm_details{
+    font: 0.6rem/1.2rem "Microsoft YaHei", "Arial", "Helvetica";
+    color: #aaa;
+}
+.zgm_li img{
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-left: 0.4rem;
+}
+.zgm_li mark{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font: 0.6rem/0.9rem "Microsoft YaHei", "Arial", "Helvetica";
+    padding: 0.05rem 0.2rem;
+    color: #333;
+    background-color: rgba(159,159,159,.3);
+}
+.zszx_bottom .tuangou{
+    border-right: 0.025rem solid #e6e6e6;
+    border-left: 0.025rem solid #e6e6e6;
+}
+.box .zyh{
+    width: 16rem;
+    height: 15.7rem;
+}
+.zyh .zyh_h3,.zpp .zpp_h3,.zjx .zjx_h3,.zjxi .zjxi_h3{
+    width: 15.25rem;
+    height: 2.375rem;
+    font: 0.9rem/2.375rem "Microsoft YaHei", "Arial", "Helvetica";
+    padding-left: 0.75rem;
+}
+.zyh .zyh_erul{
+    height: 13.125rem;
+}
+.zyh .zyh_ul{
+	height: 13.2rem;
+}
+.zyh_ul .zyh_one,.zyh_ul .zyh_three,.zyh_ul .zyh_four{
+    border-top: 0.025rem solid #e6e6e6;
+    border-right: 0.025rem solid #e6e6e6;
+	margin-left: -0.025rem;
+    overflow: hidden;
+}
+.zyh_ul .zyh_two,.zyh_ul .zyh_five{
+    border-top: 0.025rem solid #e6e6e6;
+    overflow: hidden;
+}
+.zyh_ul img,.zjx_ul img{
+    width: 8rem;
+}
+.zjx_ul .zjx_one,.zjx_ul .zjx_three,.zjx_ul .zjx_five,.zjx_ul .zjx_seven,.zjx_ul .zjx_nine{
+	border-top: 0.025rem solid #E6E6E6;
+	border-right: 0.025rem solid #E6E6E6;
+	margin-left: -0.025rem;
+	overflow: hidden;
+}
+.zjx_ul .zjx_two,.zjx_ul .zjx_four,.zjx_ul .zjx_six,.zjx_ul .zjx_eight{
+    border-top: 0.025rem solid #e6e6e6;
+    overflow: hidden;
+}
+.box .zpp{
+	width: 16rem;
+    height: 11.5rem;
+    overflow: hidden;
+}
+.zpp_ad img{
+    width: 16rem;
+}
+@-webkit-keyframes moves{
+	0%{
+		transform: translateX(0rem);
+	}
+	100%{
+		transform: translateX(-32rem);
+	}
+}
+.zpp .zpp_ul{
+	width: 64rem;
+    height: 2.4rem;
+    padding: 0.5rem 0;
+    animation: 12s moves infinite linear;
+}
+.zpp .zpp_ul:hover{
+	animation-play-state: paused;
+}
+.zpp_pic img{
+    width: 4rem;
+}
+.zpp_ul .zpp_list{
+    padding: 0 0.665rem;
+    margin-top: 0.2rem;
+}
+.box .zjx{
+    width: 16rem;
+    height: 24.425rem;
+}
+.box .hd_two{
+    width: 16rem;
+    height: 3.75rem;
+    background-color: #F2F2F2;
+}
+.hd_pic_one img,.hd_pic_two img{
+    width: 7.65rem;
+}
+.hd_two .hd_pic_one{
+    margin-left: 0.23rem;
+    margin-right: 0.1rem; 
+}
+.hd_two .hd_pic_two{
+    margin-left: 0.1rem;
+    margin-right: 0.23rem; 
+}
+.box .zjxi{
+    width: 16rem;
+    height: 6.775rem;
+}
+.zjxi .zjxi_one{
+    border-top: 0.025rem solid #e6e6e6;
+    border-right: 0.025rem solid #e6e6e6;
+}
+.zjxi .zjxi_two{
+    border-top: 0.025rem solid #e6e6e6;
+}
+.zjxi_pic img{
+    width: 7.975rem;
+}
+.box .hd_three{
+    width: 16rem;
+	background-color: #F2F2F2;
+}
+.hd_three .three_pic{
+    padding: 0 0.25rem;
+}
+.three_pic img{
+    width: 15.5rem;
+}
+.box .zhd{
+    width: 16rem;
+    height: 8.53985rem;
+}
+.zhd_top .zhd_h3{
+    height: 2.375rem;
+    font: 0.9rem/2.375rem "Microsoft YaHei", "Arial", "Helvetica";
+    padding-left: 0.75rem;
+}
+.zhd_top .more{
+    width: 4.23rem;
+    font: 0.6rem/2.375rem "Microsoft YaHei", "Arial", "Helvetica";
+    margin-right: 1rem;
+    color: #999;
+}
+.more img{
+    width: 0.7rem;
+    margin-top: 0.86rem;
+}
+.zhd .zhd_bottom{
+    padding: 0 0.275rem;
+}
+.zhd_pic img{
+    width: 7.6rem;
+}
+.box .zstj{
+    width: 16rem;
+    background-color: #f2f2f2;
+    padding-top: 0.6rem;
+}
+.zstj .zstj_h3{
+    position: relative;
+    height: 0.71955rem;
+    background: #f2f2f2 url(../img/cutLine.png) repeat-x center;
+    background-size: 0.025rem 1.3rem;
+}
+.tuijian img{
+    width: 0.7rem;
+    margin-right: 0.2rem;
+}
+.zstj_h3 .tuijian{
+    position: absolute;
+    top: 0;
+    left: 5.5rem;
+    width: 4.5rem;
+    padding: 0 0.2rem;
+    font: 0.6rem/0.71955rem "Microsoft YaHei", "Arial", "Helvetica";
+    color: #999;
+    background-color: #f2f2f2;
+    z-index: 2;
+}
+.zstj .zstj_ul{
+    padding: 0 0.5rem; 
+}
+.zstj_ul .zstj_list{
+    width: 6.5rem;
+    padding: 0.3rem;
+    border: 0.025rem solid #e6e6e6;
+    margin-top: 0.6rem;
+    background-color: #fff;
+}
+.zstj_link img{
+    width: 6.5rem;
+}
+.zstj_link .zstj_details{
+    width: 6.5rem;
+    font: 0.6rem/0.9rem "Microsoft YaHei", "Arial", "Helvetica"; 
+    word-break:break-all;
+    margin: 0.65rem 0; 
+    color: #666;
+}
+.zstj_link .zstj_price{
+    width: 100%;
+    font: 0.7rem/0.7rem "Microsoft YaHei", "Arial", "Helvetica";
+    color: #ef3030;
+    padding-top: 0.6rem;
+    border-top: 0.025rem solid #e6e6e6;
+}
+.zstj_nomore{
+    display: block;
+    width: 93.75%;
+    padding: 0 0.5rem;
+    font: 0.6rem/2.5rem "Microsoft YaHei",Arial,"Helvetica";
+    text-align: center;
+    color: #999;
+}
+footer{
+    width: 16rem;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.user_bar{
+    height: 0.8rem;
+    padding: 1.2rem 0;
+    border-bottom: 0.025rem solid #e6e6e6;
+}
+.user_bar .bar_left{
+    padding-left: 1.2rem;
+}
+.bar_left .bar_one,.bar_left .bar_two,.user_bar .bar_three{
+    color: #197fe7;
+    font: 0.6rem/0.8rem "Microsoft YaHei",Arial,"Helvetica";
+}
+.bar_left .bar_one{
+    padding: 0 0.3rem;
+    border-right: 0.025rem solid #e6e6e6;
+}
+.bar_left .bar_two{
+    padding: 0 0.3rem;
+}
+.bar_three{
+    padding-right: 1.2rem;
+}
+footer .version{
+    width: 8.755rem;
+    height: 0.8rem;
+    font: 0.6rem/0.8rem "Microsoft YaHei",Arial,"Helvetica";
+    padding: 1.2rem 0;
+    margin: 0 auto;
+}
+.version a{
+    padding: 0 0.5rem;
+}
+.version .ver_one{
+    padding: 0 0.5rem;
+    color: #aeb8be;
+}
+.version .ver_two,.version .ver_three{
+    color: #6e7f89;
+}
+footer address{
+    margin-bottom: 2rem;
+}
+address p{
+    width: 10.85rem;
+    font: 0.6rem/0.9rem  "Microsoft YaHei",Arial,"Helvetica";
+    text-align: center;
+    margin: 0 auto;
+    color: #bfc2c5;
+}
