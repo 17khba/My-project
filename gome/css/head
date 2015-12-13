@@ -1,0 +1,317 @@
+/*reset css*/
+body{margin: 0;_background-attachment:fixed;_background-image:url(about:blank);}
+h1,h2,h3,h4,dl,dd,p{margin: 0;}
+ol,ul{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+input{border: none;}
+button{padding: 0;border: 0;}
+img{border: none; display: block;}
+i,em{font-style: normal;}
+b,strong{font-weight: normal;}
+input{outline: none; padding: 0;}
+mark{background-color: #fff;}
+form{margin: 0;}
+.topWrap{                           /*热销列表、猜你喜欢列表、基础服务复用样式*/
+    margin-top: 10px;
+} 
+.widthWrap{                         /*二级标签复用样式*/
+    width: 1200px;
+    margin: 0 auto;
+}
+.clearfix{
+    *zoom: 1;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.style_inline{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+/*全部商品分类下拉箭头*/
+.subNav .goodsSort{
+    position: relative;
+}
+.goodsSort .goodList{
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    width: 12px;
+    height: 9px;
+    background: url(../img/search_sprite.png) no-repeat 0 -23px;
+    cursor: pointer;
+    overflow: hidden;
+}
+/*独立样式*/
+.topNav{    
+    width: 100%;                        
+    height: 30px;
+    background-color: #f3f3f3;
+}
+.topNav .navContent{
+    height: 30px;
+}
+.navContent .navLeft{                   
+    width: 204px;
+    height: 30px;
+}
+.navLeft .tdCode{
+    width: 16px;
+    height: 16px;
+    margin-top: 7px;
+    margin-right: 5px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../img/sprite.png) no-repeat;
+}
+.navLeft .guomei{
+    height: 30px;
+    font: 12px/30px "宋体";
+    margin-right: 7px;
+    color: #5e5e5e;
+    overflow: hidden;
+}
+.navLeft .activeA{
+    color: #cc0000;
+}
+.navLeft a:hover{
+    color: #cc0000;
+}   
+.topNav .navRight{                          
+    width: 735px;
+    height: 30px;
+    font: 12px/30px 'Arial','SimSun','Tahoma','Helvetica','sans-serif';
+    overflow: hidden;
+}
+.navRight li{
+    margin-left: 20px;
+    *display: inline;
+}
+.logIn a{
+    color: #333;
+}
+.marchant .sjrz{
+    margin-right: 5px;
+    color: #0066cc;
+}
+.navRight a{
+    color: #5e5e5e;
+}
+.navRight a:hover{
+    color: #cc0000;
+}
+.navBars .icoSj{
+    width: 0;
+    height: 0;
+    vertical-align: text-bottom;
+    border-top: 4px solid #5e5e5e;
+    border-right: 4px solid #f3f3f3;
+    border-left: 4px solid #f3f3f3;
+    margin-top: 12px;
+}
+.marchant .icoRight{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-top: 8px;
+    background: url(../img/sprite.png) no-repeat 0 -17px;
+}                                                                                               
+.topAd{                                                 
+    position: relative;
+    height: 120px;
+}
+.topAd a{
+    display:block;
+    height: 120px;
+}
+.bigAd i{
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    width: 12px;
+    height: 12px;
+    background: url(../img/sprite.png) no-repeat 0 -77px;
+    opacity: 0.5;
+    overflow: hidden;
+}                                                   
+.gomeHead{
+    height: 130px;
+}
+.gomeHead .headMain{
+    height: 130px;
+}                                   
+.headMain .subNav{
+    width: 1200px;
+    height: 42px;
+}
+.headMain .searchBars{
+    width: 1200px;
+    height: 73px;
+    padding-top: 16px;
+    margin: 0 auto;
+}
+.barsLeft .logo{
+    width: 200px;
+    height: 43px;
+}
+.logo img{
+    margin-top: 3px;
+}
+.barsLeft .logoAd{
+    width: 100px;
+    height: 50px;
+    margin-right: 88px;
+}
+.barsLeft img{
+    vertical-align: top;
+}
+.searchBars .search_box{
+    width: 500px;
+    height: 73px;
+}
+.search_box .main_searchBar{
+    width: 494px;
+    height: 32px;
+    border: 3px solid #cc0000;
+}
+.main_searchBar label{
+    width: 410px;
+}
+.main_searchBar input{
+    width: 413px;
+    height: 30px;
+    font: 12px/30px 'Arial','SimSun','Tahoma','Helvetica','sans-serif';
+    padding-left: 11px;
+    *margin-top: 4px;
+}
+.main_searchBar button{
+    width: 69px;
+    height: 32px;
+    font: normal 12px/32px 'Arial','SimSun','Tahoma','Helvetica','sans-serif';
+    cursor: pointer;
+    background-color: #cc0000;
+    color: #fff;
+    *height: 36px;
+    *margin-right: -4px;
+}
+.searchBars .hotSearch{
+    width: 500px;
+    height: 26px;
+    margin-top: 3px;
+    overflow: hidden;
+}
+.hotSearch a{
+    height: 26px;
+    font: 12px/26px 'Arial','SimSun','Tahoma','Helvetica','sans-serif';
+    color: #a5a5a5;
+}
+.hotSearch a:hover{
+    color: #cc0000;
+}
+.barsRight .gwc{
+    position: relative;
+    width: 27px;
+    height: 20px;
+    vertical-align: middle;
+    background: url(../img/sprite.png) no-repeat 0 -33px;
+}
+.barsRight i{
+    position: absolute;
+    left: 15px;
+    top: -18px;
+    width: 20px;
+    height: 22px;
+    background: url(../img/sprite.png) 0 -54px;
+}
+.empty b{
+    width: 0;
+    height: 0;
+    border-width: 4px 4px 2px 4px;
+    border-style: solid dashed dashed dashed;
+    border-color: #5E5E5E #fff #fff #fff;
+    font-size: 0;
+    overflow: hidden;
+}
+.searchBars .barsRight{
+    width: 139px;
+    height: 38px;
+    text-align:center;
+}
+.barsRight .empty{
+    font: 12px/38px 'Arial','SimSun','Tahoma','Helvetica','sans-serif';
+    color: #5e5e5e;
+    *margin-left: 15px;
+}
+.subNav .goodsSort{                             
+    width: 198px;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    border-bottom: 1px solid #fff;
+}
+.goodsSort a{
+    padding-left: 14px;
+    font:16px/40px "微软雅黑";
+    color: #333;
+}
+.subNav .navList{
+    width: 754px;
+    height: 41px;
+}
+.navList a{
+    height: 36px;
+    font:bold 16px/36px "微软雅黑";
+    padding: 0 20px 1px;
+    border-bottom: 4px solid #fff;
+    /*margin-right: -9px;*/
+    color: #333;
+    *padding-bottom: 2px;
+}
+.navList a:hover{
+    color: #cc0000;
+    border-bottom: 4px solid #db4c4c;
+}
+.apple .appleLeft{
+    width: 140px;
+    height: 41px;
+    text-align: right;
+    font:bold 16px/41px "微软雅黑";
+}
+.apple .sanjiao{
+    width: 8px;
+    height: 15px;
+    padding-right: 5px;
+    margin-top: 14px;
+    margin-left: 10px;          
+}
+.gysj{
+    display: block;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.apple .topSj{
+    
+    border-width: 2px 4px 4px 4px;
+    border-style: dashed solid solid solid; 
+    border-color: #fff #fff #A5A5A5 #fff;
+    margin-bottom: 4px;
+}
+.apple .bottomSj{
+    border-width: 4px 4px 2px 4px;
+    border-style: solid solid dashed solid; 
+    border-color: #A5A5A5 #fff #fff #fff;
+    
+}   
+                                           
