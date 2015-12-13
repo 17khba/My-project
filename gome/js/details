@@ -1,0 +1,55 @@
+window.onload = function(){
+	var other = document.getElementById( "other" ),
+		box = document.getElementById( "ztnr_pic" ),
+		mask = document.getElementById( "mask" ),
+		box1 = document.getElementById( "ztnr_big_pic" ),
+		big_pic = document.getElementById( "big_pic" );
+
+	other.onmouseover = function(){
+		mask.style.display = 'block';
+		box1.style.display = 'block';
+	}
+
+	other.onmouseout = function(){
+		mask.style.display = 'none';
+		box1.style.display = 'none';
+	}
+
+	other.onmousemove = function( ev ){
+
+		var e = ev || event,
+
+			mask_max_left = box.offsetWidth - mask.offsetWidth,
+			mask_max_top = box.offsetHeight - mask.offsetHeight,
+			pic_max_left = box1.offsetWidth - big_pic.offsetWidth,
+			pic_max_top = box1.offsetHeight - big_pic.offsetHeight,
+
+			scrollT = document.documentElement.scrollTop || document.body.scrollTop,
+			scrollL = document.documentElement.scrollLeft || document.body.scrollLeft,
+
+			currentX = scrollL + e.clientX  - box.offsetLeft - other.clientLeft - ( mask.offsetWidth/2 ), 
+			currentY = scrollT + e.clientY  - box.offsetTop - other.clientTop - ( mask.offsetHeight/2 ); 
+
+		if( currentX < 0 ){
+			currentX = 0;
+		} else if( currentX >= mask_max_left ){
+			currentX = mask_max_left;
+		}
+
+		if( currentY < 0 ){
+			currentY = 0;
+		} else if( currentY >= mask_max_top ){
+			currentY = mask_max_top;
+		}
+
+		percentX = ( currentX / mask_max_left ) * pic_max_left;
+		percentY = ( currentY / mask_max_top ) * pic_max_top;
+
+		mask.style.top = currentY + 'px';
+		mask.style.left = currentX + 'px';
+
+		big_pic.style.left = percentX + 'px';
+		big_pic.style.top = percentY + 'px';
+		console.log( percentX,percentY );
+	}
+};
