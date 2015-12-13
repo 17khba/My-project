@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>国美在线触屏版</title>
+    <script type="text/javascript">
+        var iScale = 1;
+        iScale = 1/window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+iScale+',minimum-scale='+iScale+',maximum-scale='+iScale+',user-scalable=no" />')
+    </script>
+    <script>
+        var iWidth = document.documentElement.clientWidth;
+        iWidth = iWidth > 1080 ? 1080 : iWidth;
+        document.getElementsByTagName('html')[0].style.fontSize = iWidth/16 + 'px';
+    </script>
+    <link rel="stylesheet" href="css/m.gm.css">
+    <link rel="shortcut icon" href="http://www.gome.com.cn/ec/homeus/favicon.ico">
+</head>
+<body>
+    <header class="">
+        <section class="head_box clearfix">
+            <h1 class="logo fl">
+                <img src="img/gome_logo.png" alt="" class="fl">
+            </h1>
+            <form action="" class="search_form fl">
+                <input type="text" class="search_bar" placeholder="iPhone6" autocomplete="on" autofocus required>
+                <a href=""><img src="img/search.png" alt=""></a>
+            </form>
+            <a href="" class="user_login fl">登录</a>
+        </section>
+    </header>
+    <section class="box">
+        <!-- 轮播图 -->
+        <div id="boxID">
+            <div class="pic">
+                <ul class="lbt_ul clearfix">
+                    <li class="lbt_list fl"><a href="#"><img src="img/yewap0813_x.jpg" thumb="" alt="one"/></a></li>
+                    <li class="lbt_list fl"><a href="#"><img src="img/yh640_x.jpg" thumb="" alt="one"/></a></li>
+                    <li class="lbt_list fl"><a href="#"><img src="img/zhuwap0817new_x.jpg" thumb="" alt="one"/></a></li>
+                    <li class="lbt_list fl"><a href="#"><img src="img/yewap0813_x.jpg" thumb="" alt="one"/></a></li>
+                    <li class="lbt_list fl"><a href="#"><img src="img/yh640_x.jpg" thumb="" alt="one"/></a></li>
+                    <li class="lbt_list fl"><a href="#"><img src="img/zhuwap0817new_x.jpg" thumb="" alt="one"/></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 快捷入口 -->
+        <ul class="quick_nav clearfix">
+            <li class="nav_list fl">
+                <a href="" class="nav_pic">
+                    <img src="img/fenlei@2x.png" alt="">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li class="nav_list fl">
+                <a href="" class="nav_pic">
+                    <img src="img/my@2x.png" alt="">
+                    <span>我的国美</span>
+                </a>
+            </li>
+            <li class="nav_list fl">
+                <a href="" class="nav_pic">
+                    <img src="img/gouwuche.png" alt="">
+                    <span>购物车</span>
+                </a>
+            </li>
+            <li class="nav_list fl">
+                <a href="" class="nav_pic">
+                    <img src="img/dingdan@2x.png" alt="">
+                    <span>订单查询</span>
+                </a>
+            </li>
+            <li class="nav_list fl">
+                <a href="" class="nav_pic">
+                    <img src="img/shoujichongzhi_82.png" alt="">
+                    <span>充值</span>
+                </a>
+            </li>
+            <li class="nav_list fl">
+                <a href="" class="nav_pic">
+                    <img src="img/movie@2x.png" alt="">
+                    <span>电影票</span>
+                </a>
+            </li>
+            <li class="nav_list fl">
+                <a href="" class="nav_pic">
+                    <img src="img/zhongchou1.png" alt="">
+                    <span>国美众筹</span>
+                </a>
+            </li>
+            <li class="nav_list fl">
+                <a href="" class="nav_pic">
+                    <img src="img/meichoubao_82.png" alt="">
+                    <span>美盈宝</span>
+                </a>
+            </li>
+        </ul>
+        <!-- 活动楼层 -->
+        <div class="activity clearfix">
+            <a href="" class="act_one fl"><img src="img/813xiaojiadian0813_3.jpg" alt=""></a>
+            <a href="" class="act_two fl"><img src="img/815chouhuangjin0813_3.jpg" alt=""></a>
+            <a href="" class="act_three fl"><img src="img/813haierquan0813_3.jpg" alt=""></a>
+        </div>
+        <!-- 掌上专享 -->
+        <div class="zszx clearfix">
+                <a class="zszx_top fl" href="">
+                    <img src="img/1000771571-30-180_160.jpg" alt="" class="fl">
+                    <h2 class="zszx_title fr">掌上专享</h2>
+                    <p class="zszx_price fr">
+                        <strong class="price_one fl">¥1499.00</strong>
+                        <mark class="price_two fl">
+                            比网站更省<i>100</i>元
+                            <i class="left_sj"></i>
+                        </mark>
+                    </p>
+                    <span class="haixin fl">海信1匹冷暖电辅空调</span>
+                </a>
+                <ul class="zszx_bottom fl" href="">
+                    <li class="zszx_ul fl">
+                        <a class="zgm_li fl">
+                            <h4 class="">最国美</h4>
+                            <p class="zgm_details">长虹39英寸网络</p>
+                            <img src="img/1000774961-30-180_160.jpg" alt="">
+                            <mark>¥1499</mark>
+                        </a>
+                    </li>
+                    <li class="zszx_ul fl tuangou">
+                        <a class="zgm_li fl">
+                            <h4 class="">团购</h4>
+                            <p class="zgm_details">火拼价更低</p>
+                            <img src="img/1000768755_160.jpg" alt="">
+                            <mark>¥4588</mark>
+                        </a>
+                    </li>
+                    <li class="zszx_ul fl">
+                        <a class="zgm_li fl">
+                            <h4 class="">赶早集</h4>
+                            <p class="zgm_details">已结束</p>
+                            <img src="img/1000759624_160.jpg" alt="">
+                            <mark>¥16</mark>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+        <!-- 最优惠 -->
+        <div class="zyh bb_e6">
+            <h3 class="zyh_h3">最优惠</h3>
+            <ul class="zyh_ul clearfix">
+                <li class="zyh_one fl">
+                    <a href="" class="zyh_pic fl">
+                        <img src="img/zyhjiadian0813_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zyh_two fr">
+                    <a href="" class="zyh_pic fl">
+                        <img src="img/zyh3c0813_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zyh_three fr">
+                    <a href="" class="zyh_pic fr">
+                        <img src="img/zyhfushi0813_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zyh_four fl">
+                    <a href="" class="zyh_pic fl">
+                        <img src="img/zyhqiche0813_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zyh_five fl">
+                    <a href="" class="zyh_pic fl">
+                        <img src="img/zyhdianyalibao0814_x.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 最品牌 -->
+        <div class="zpp bb_e6 clearfix">
+            <h3 class="zpp_h3 fl">最品牌</h3>
+            <a href="" class="zpp_ad fl">
+                <img src="img/pingguo6rukou_x.jpg" alt="">
+            </a>
+            <ul class="zpp_ul fl">
+                <li class="zpp_list fl">
+                    <a href="" class="zpp_pic fl">
+                        <img src="img/huaweilogo_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zpp_list fl">
+                    <a href="" class="zpp_pic fl">
+                        <img src="img/haixinlogo_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zpp_list fl">
+                    <a href="" class="zpp_pic fl">
+                        <img src="img/kuangweilogo_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zpp_list fl">
+                    <a href="" class="zpp_pic fl">
+                        <img src="img/meidi1logo_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zpp_list fl">
+                    <a href="" class="zpp_pic fl">
+                        <img src="img/deierlogo_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zpp_list fl">
+                    <a href="" class="zpp_pic fl">
+                        <img src="img/xiaomilogo_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zpp_list fl">
+                    <a href="" class="zpp_pic fl">
+                        <img src="img/huaweilogo_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zpp_list fl">
+                    <a href="" class="zpp_pic fl">
+                        <img src="img/haixinlogo_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zpp_list fl">
+                    <a href="" class="zpp_pic fl">
+                        <img src="img/kuangweilogo_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zpp_list fl">
+                    <a href="" class="zpp_pic fl">
+                        <img src="img/meidi1logo_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zpp_list fl">
+                    <a href="" class="zpp_pic fl">
+                        <img src="img/deierlogo_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zpp_list fl">
+                    <a href="" class="zpp_pic fl">
+                        <img src="img/xiaomilogo_x.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 最精选 -->
+        <div class="zjx bb_e6">
+            <h3 class="zjx_h3">最精选</h3>
+            <ul class="zjx_ul clearfix">
+                <li class="zjx_one fl">
+                    <a href="" class="zyh_pic fl">
+                        <img src="img/wapbingxiang815_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zjx_two fr">
+                    <a href="" class="zyh_pic fl">
+                        <img src="img/wapdianshi815_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zjx_three fr">
+                    <a href="" class="zyh_pic fl">
+                        <img src="img/wapkongtiao815_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zjx_four fr">
+                    <a href="" class="zyh_pic fl">
+                        <img src="img/wapshouji8150_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zjx_five fl">
+                    <a href="" class="zyh_pic fl">
+                        <img src="img/wapchuwei815_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zjx_six fr">
+                    <a href="" class="zyh_pic fl">
+                        <img src="img/wapkuaixiao813_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zjx_seven fl">
+                    <a href="" class="zyh_pic fl">
+                        <img src="img/wapjiaju813_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zjx_eight fr">
+                    <a href="" class="zyh_pic fl">
+                        <img src="img/wapfushi813_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zjx_nine fl">
+                    <a href="" class="zyh_pic fl">
+                        <img src="img/wapqiche813_x.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 活动楼层2 -->
+        <div class="hd_two bb_e6 clearfix">
+            <a href="" class="hd_pic_one fl">
+                <img src="img/dtchuwei_2.jpg" alt="">
+            </a>
+            <a href="" class="hd_pic_two fl">
+                <img src="img/dtqixihaonanren_2.jpg" alt="">
+            </a>
+        </div>
+        <!-- 最惊喜 -->
+        <div class="zjxi bb_e6 clearfix">
+            <h3 class="zjxi_h3 fl">最惊喜</h3>
+            <a href="" class="zjxi_pic zjxi_one fl">
+                <img src="img/SWSB-320_x.jpg" alt="">
+            </a>
+            <a href="" class="zjxi_pic zjxi_two fl">
+                <img src="img/sxA8-320_x.jpg" alt="">
+            </a>
+        </div>
+        <!-- 活动楼层3-->
+        <div class="hd_three bb_e6 clearfix">
+            <a href="" class="three_pic fl">
+                <img src="img/201507021237535_1.png" alt="">
+            </a>
+        </div>
+        <!-- 最好店 -->
+        <div class="zhd">
+            <div class="zhd_top clearfix">
+                <h3 class="zhd_h3 fl">最好店</h3>
+                <a href="" class="more fr">
+                    <span class="fl">好店推荐</span>
+                    <img class="fr" src="img/right_sj.png" alt="">
+                </a>
+            </div>
+            <ul class="zhd_bottom clearfix">
+                <li class="zhd_list fl">
+                    <a href="" class="zhd_pic">
+                        <img src="img/lx7231_x.jpg" alt="">
+                    </a>
+                </li>
+                <li class="zhd_list fr">
+                    <a href="" class="zhd_pic">
+                        <img src="img/jrrukou_x.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 专属推荐 -->
+        <div class="zstj">
+            <h3 class="zstj_h3 clearfix">
+                <span class="tuijian fl">
+                    <img class="fl" src="img/top_jt.png" alt="">
+                    你的专属推荐
+                </span>
+            </h3>
+            <ul class="zstj_ul clearfix">
+                <li class="zstj_list fl" style="margin-right:0.5rem;">
+                    <a href="" class="zstj_link fl">
+                        <img class="fl" src="img/1000804714_260.jpg" alt="">
+                        <span class="zstj_details fl">Apple iPad Air MD788CH/B 9.7英寸 16G</span>
+                        <strong class="zstj_price fl">¥2540.00</strong>
+                    </a>
+                </li>
+                <li class="zstj_list fl">
+                    <a href="" class="zstj_link fl">
+                        <img class="fl" src="img/1000804714_260.jpg" alt="">
+                        <span class="zstj_details fl">Apple iPad Air MD788CH/B 9.7英寸 16G</span>
+                        <strong class="zstj_price fl">¥2540.00</strong>
+                    </a>
+                </li>
+                <li class="zstj_list fl" style="margin-right:0.5rem;">
+                    <a href="" class="zstj_link fl">
+                        <img class="fl" src="img/1000804714_260.jpg" alt="">
+                        <span class="zstj_details fl">Apple iPad Air MD788CH/B 9.7英寸 16G</span>
+                        <strong class="zstj_price fl">¥2540.00</strong>
+                    </a>
+                </li>
+                <li class="zstj_list fl">
+                    <a href="" class="zstj_link fl">
+                        <img class="fl" src="img/1000804714_260.jpg" alt="">
+                        <span class="zstj_details fl">Apple iPad Air MD788CH/B 9.7英寸 16G</span>
+                        <strong class="zstj_price fl">¥2540.00</strong>
+                    </a>
+                </li>
+                <li class="zstj_list fl" style="margin-right:0.5rem;">
+                    <a href="" class="zstj_link fl">
+                        <img class="fl" src="img/1000804714_260.jpg" alt="">
+                        <span class="zstj_details fl">Apple iPad Air MD788CH/B 9.7英寸 16G</span>
+                        <strong class="zstj_price fl">¥2540.00</strong>
+                    </a>
+                </li>
+                <li class="zstj_list fl">
+                    <a href="" class="zstj_link fl">
+                        <img class="fl" src="img/1000804714_260.jpg" alt="">
+                        <span class="zstj_details fl">Apple iPad Air MD788CH/B 9.7英寸 16G</span>
+                        <strong class="zstj_price fl">¥2540.00</strong>
+                    </a>
+                </li>
+                <li class="zstj_list fl" style="margin-right:0.5rem;">
+                    <a href="" class="zstj_link fl">
+                        <img class="fl" src="img/1000804714_260.jpg" alt="">
+                        <span class="zstj_details fl">Apple iPad Air MD788CH/B 9.7英寸 16G</span>
+                        <strong class="zstj_price fl">¥2540.00</strong>
+                    </a>
+                </li>
+                <li class="zstj_list fl">
+                    <a href="" class="zstj_link fl">
+                        <img class="fl" src="img/1000804714_260.jpg" alt="">
+                        <span class="zstj_details fl">Apple iPad Air MD788CH/B 9.7英寸 16G</span>
+                        <strong class="zstj_price fl">¥2540.00</strong>
+                    </a>
+                </li>
+                <li class="zstj_list fl" style="margin-right:0.5rem;">
+                    <a href="" class="zstj_link fl">
+                        <img class="fl" src="img/1000804714_260.jpg" alt="">
+                        <span class="zstj_details fl">Apple iPad Air MD788CH/B 9.7英寸 16G</span>
+                        <strong class="zstj_price fl">¥2540.00</strong>
+                    </a>
+                </li>
+                <li class="zstj_list fl">
+                    <a href="" class="zstj_link fl">
+                        <img class="fl" src="img/1000804714_260.jpg" alt="">
+                        <span class="zstj_details fl">Apple iPad Air MD788CH/B 9.7英寸 16G</span>
+                        <strong class="zstj_price fl">¥2540.00</strong>
+                    </a>
+                </li>
+            </ul>
+            <span class="zstj_nomore">没有更多商品了</span>
+        </div>
+    </section>
+    <footer>
+        <div class="user_bar">
+            <span class="bar_left fl">
+                <a href="" class="bar_one fl">登录</a>
+                <a href="" class="bar_two fl">注册</a>
+            </span>
+            <a href="" class="bar_three fr">反馈</a>
+        </div>
+        <div class="version">
+            <span class="ver_one">触屏版</span>
+            <a href="" class="ver_two">电脑版</a>
+            <a href="" class="ver_three">客户端</a>
+        </div>
+        <address>
+            <p class="copyright">copyright © 2000-2015 gome.com.cn</p>
+            <p class="tel">客服热线：4008-708-708</p>
+        </address>
+    </footer>
+</body>
+</html>
