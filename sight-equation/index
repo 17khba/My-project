@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<style type="text/css" media="screen">
+		/*css reset*/
+		ul{ padding: 0; margin: 0;}
+		li{ list-style: none; }
+
+
+		body{
+			text-align: center;
+			font: 30px Verdana;
+			margin: 0;
+			color: #fff;
+			overflow: hidden;
+		}
+		#box{
+			width: 100%;
+			height: 100%;
+		}
+		#box div{
+			transition: transform 2s,opacity 6s;
+		}
+		#box .on{
+			font: 20px Verdana;
+			transform: translate3d(0, 0, 0);
+			opacity: 1;
+		}
+		.section{
+			width: 100%;
+			overflow: hidden;
+		}
+		#section0{
+			background: url(img/cloud.jpg) no-repeat;
+			-webkit-background-size: 736px 463px;
+			background-size: 100% 100%;
+		}
+		#section1{
+			background: url(img/horse.jpg) no-repeat;
+			-webkit-background-size: 736px 463px;
+			background-size: 100% 100%;
+		}
+		#section2{
+			width: calc( 100% - 100px );
+			padding: 0 50px;
+			background: url(img/tree.jpg) no-repeat;
+			-webkit-background-size: 736px 463px;
+			background-size: 100% 100%;
+		}
+
+		/*page_one css*/
+		#stage{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -50px;
+			margin-left: -64px;
+			width: 350px;
+			height: 134px;
+			perspective: 800px;
+			transition: opacity 3s;
+			opacity: 0;
+		}
+		div#container{
+			position: absolute;
+			width: 200px;
+			height: 134px;
+			transform: rotate(-30deg);
+			transform-style: preserve-3d;
+			cursor: pointer;
+			transition: transform 1s;
+		}
+		#container img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 200px;
+			height: 134px;
+			border: 1px solid #fff;
+			border-radius: 1%/99%;
+			box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.7);
+		}
+
+		/*page_two css*/
+		#square0{
+			padding: 100px;
+			transform:  translate3d(0, -800px, 0);
+		}
+		#square1{
+			padding: 50px 100px 0;
+			transform:  translate3d(0, 800px, 0);
+		}
+		.top,.bottom{
+			display: inline-block;
+			border: 1px solid #fff;
+			box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+		}
+
+		/*page_three*/
+		#detail_top,#detail_cont,#detail_bottom{
+			margin-top: 50px;
+		}
+		#detail_top{
+			transform: translate3d( -1500px, 0, 0);
+		}
+		#detail_cont{
+			opacity: 0;
+		}
+		#detail_cont img{
+			transform: rotateX(30deg);
+		}
+		#detail_bottom{
+			transform: translate3d( 1500px, 0, 0);
+		}
+		/*right side*/
+		#btn{
+			position: fixed;
+			top: 50%;
+			right: 20px;
+			margin-top: -25px;
+			width: 15px;
+			height: 55px;
+			text-align: center;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		#btn li{
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			border: 1px solid #fff;
+			border-radius: 20%/20%;
+			background-color: #fff;
+			box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.8);
+			box-sizing: border-box;
+			cursor: pointer;
+		}
+		#btn li.active{
+			background-color: #f96;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/csshake.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div id="box">
+		<section id="section0" class="section">
+			<div id="stage">
+				<div id="container">
+					<img src="img/2042.jpg" alt="">
+					<img src="img/2222.jpg" alt="">
+					<img src="img/2223.jpg" alt="">
+					<img src="img/2224.jpg" alt="">
+					<img src="img/2225.jpg" alt="">
+					<img src="img/2226.jpg" alt="">
+					<img src="img/2227.jpg" alt="">
+					<img src="img/2228.jpg" alt="">
+					<img src="img/2229.jpg" alt="">
+				</div>
+			</div>
+		</section>
+		<section id="section1" class="section">
+			<div id="square0" class="square">
+				<img src="img/one.jpg" class="top shake-slow shake-constant shake-constant--hover">
+				<img src="img/two.jpg" class="top shake shake-constant shake-constant--hover">
+			</div>
+			<div id="square1" class="square">
+				<img src="img/three.jpg" class="bottom shake-opacity shake-constant shake-constant--hover">
+				<img src="img/four.jpg" class="bottom shake-chunk shake-constant shake-constant--hover">
+			</div>
+		</section>
+		<section id="section2" class="section">
+			<div id="detail_top">2015年音悦V榜第49期 - 内地篇</div>
+			<div id="detail_cont"><img src="img/page.jpg" alt=""></div>
+			<div id="detail_bottom">本周内地V榜，#吉克隽逸#新专预热曲首发，逼真人偶造型展开想象的翅膀；#鹿晗#牵手功夫熊猫阿宝，傻狍子冷酷男傻傻分不出清楚；#华晨宇#《蜉蝣》登顶，展现吃货呆萌另一面的唱作鬼才。本周内地V榜好歌一箩筐，千万不要错过~</div>
+		</section>
+		<ul id="btn">
+			<li class="btn"></li>
+			<li class="btn"></li>
+			<li class="btn"></li>
+		</ul>
+	</div>
+</body>
+</html>
