@@ -1,4 +1,4 @@
-$(function(){
+(function(){
 	var aSection = document.getElementById( 'box' ).getElementsByTagName( 'section' );
 	var container = document.getElementById( 'container' );
 	var aImg = container.getElementsByTagName( 'img' );
@@ -77,22 +77,25 @@ $(function(){
 	aBtn[num].className = 'btn active';
 	for (var i = 0; i < aBtn.length; i++) {
 		aBtn[i].index = i;
-			aBtn[i].onclick = function(){
-				if( onoff ){
-					onoff = false;
-					num = this.index;
-					for (var i = 0; i < aBtn.length; i++) {
-						aBtn[i].className = 'btn';
-						hide( 'section' + i );
-					};
-					aBtn[num].className = 'btn active';
-					show( 'section' + num );
-					animated( num * docHeight(), function(){
-						onoff =  true;
-					} );
-				}
-			};
+			aBtn[i].onclick = 
+			bind( aBtn[i], 'click', trunNext );
 	};
+
+	function trunNext(){
+		if( onoff ){
+			onoff = false;
+			num = this.index;
+			for (var i = 0; i < aBtn.length; i++) {
+				aBtn[i].className = 'btn';
+				hide( 'section' + i );
+			};
+			aBtn[num].className = 'btn active';
+			show( 'section' + num );
+			animated( num * docHeight(), function(){
+				onoff =  true;
+			} );
+		}
+	}
 	// window.location.href=window.location+"?" + Math.random();
 
 	function mouseWheel( ev ){
@@ -188,9 +191,9 @@ $(function(){
 	function docHeight(){
 		return document.documentElement.clientHeight || document.body.clientHeight;
 	}
-
-})
 //解决右侧按钮点击没有过度效果的问题
 //在此基础上引入了css shake效果
 //新增了一个css3点击图片轮播的效果
+})()
+	
  
