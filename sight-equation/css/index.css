@@ -1,0 +1,137 @@
+/*css reset*/
+ul{ padding: 0; margin: 0;}
+li{ list-style: none; }
+
+
+body{
+	text-align: center;
+	font: 30px Verdana;
+	margin: 0;
+	color: #fff;
+	overflow: hidden;
+}
+#box{
+	width: 100%;
+	height: 100%;
+}
+#box div{
+	transition: transform 2s,opacity 6s;
+}
+#box .on{
+	font: 20px Verdana;
+	transform: translate3d(0, 0, 0);
+	opacity: 1;
+}
+.section{
+	width: 100%;
+	overflow: hidden;
+}
+#section0{
+	background: url(../img/cloud.jpg) no-repeat;
+	-webkit-background-size: 736px 463px;
+	background-size: 100% 100%;
+}
+#section1{
+	background: url(../img/horse.jpg) no-repeat;
+	-webkit-background-size: 736px 463px;
+	background-size: 100% 100%;
+}
+#section2{
+	width: calc( 100% - 100px );
+	padding: 0 50px;
+	background: url(../img/tree.jpg) no-repeat;
+	-webkit-background-size: 736px 463px;
+	background-size: 100% 100%;
+}
+
+/*page_one css*/
+#stage{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -64px;
+	width: 350px;
+	height: 134px;
+	perspective: 800px;
+	transition: opacity 3s;
+	opacity: 0;
+}
+div#container{
+	position: absolute;
+	width: 200px;
+	height: 134px;
+	transform: rotate(-30deg);
+	transform-style: preserve-3d;
+	cursor: pointer;
+	transition: transform 1s;
+}
+#container img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 134px;
+	border: 1px solid #fff;
+	border-radius: 1%/99%;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.7);
+}
+
+/*page_two css*/
+#square0{
+	padding: 100px;
+	transform:  translate3d(0, -800px, 0);
+}
+#square1{
+	padding: 50px 100px 0;
+	transform:  translate3d(0, 800px, 0);
+}
+.top,.bottom{
+	display: inline-block;
+	border: 1px solid #fff;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*page_three*/
+#detail_top,#detail_cont,#detail_bottom{
+	margin-top: 50px;
+}
+#detail_top{
+	transform: translate3d( -1500px, 0, 0);
+}
+#detail_cont{
+	opacity: 0;
+}
+#detail_cont img{
+	transform: rotateX(30deg);
+}
+#detail_bottom{
+	transform: translate3d( 1500px, 0, 0);
+}
+
+/*right side*/
+#btn{
+	position: fixed;
+	top: 50%;
+	right: 20px;
+	margin-top: -25px;
+	width: 15px;
+	height: 55px;
+	text-align: center;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+#btn li{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #fff;
+	border-radius: 20%/20%;
+	background-color: #fff;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.8);
+	box-sizing: border-box;
+	cursor: pointer;
+}
+#btn li.active{
+	background-color: #f96;
+}
