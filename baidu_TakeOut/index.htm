@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度外卖</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/html5shiv.js"></script>
+	<![endif]-->
+	<link rel="icon" href="img/favicon.ico">
+	<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="head_wrap clearfix">
+			<div class="head_left fl">
+				<h1 class="head_left_logo"><a href="javascript:;" title="logo">logo</a></h1>
+				<div class="head_left_map">
+					<div class="left_map_cont">
+						<i class="map_cont_ico"></i>
+						<input class="map_cont_txt" type="text" name="" value="北京百度外卖">
+					</div>
+				</div>
+				<div class="head_left_search">
+					<div class="left_search_cont">
+						<i class="search_cont_ico"></i>
+						<span class="search_mask">搜索商户或商品</span>
+						<input id="search_cont_txt" class="search_cont_txt" type="text"></input>
+					</div>
+				</div>
+			</div>
+			<div class="head_right fr">
+				<nav class="head_nav">
+					<ul class="nav_menu">
+						<li class="menu_list list_one"><a href="javascript:;" title="">外卖</a></li>
+						<li class="menu_list list_two"><a href="javascript:;" title="">我的订单</a></li>
+						<li class="menu_list list_two"><a href="javascript:;" title="">联系我们</a></li>
+					</ul>
+				</nav>
+				<div class="accont_info">
+					<a href="javascript:;" title="">登录</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="nav_top">
+		<nav class="nav_link">
+			<a class="link_nav active" href="javascript:;" title="">附近的餐厅</a>
+			<a class="link_nav" href="javascript:;" title="">超市购</a>
+			<a class="link_nav" href="javascript:;" title="">大家都在吃</a>
+		</nav>
+	</div>
+	<div id="nav_sort">
+		<ul>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_one"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">全部</a>
+			</li>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_two"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">新店特惠</a>
+			</li>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_three"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">品牌连锁</a>
+			</li>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_four"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">家常快餐</a>
+			</li>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_five"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">地方菜</a>
+			</li>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_six"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">特色小吃</a>
+			</li>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_seven"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">日韩料理</a>
+			</li>
+			<li class="sort_list m4">
+				<i class="sort_list_ico ico_eight"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">西式快餐</a>
+			</li>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_one"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">烧烤海鲜</a>
+			</li>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_two"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">下午茶</a>
+			</li>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_three"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">火锅</a>
+			</li>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_four"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">水果生鲜</a>
+			</li>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_five"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">鲜花蛋糕</a>
+			</li>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_six"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">超市购</a>
+			</li>
+			<li class="sort_list">
+				<i class="sort_list_ico ico_seven"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">夜宵</a>
+			</li>
+			<li class="sort_list m4">
+				<i class="sort_list_ico ico_eight"></i>
+				<a class="sort_list_txt" href="javascript:;" title="">送药上门</a>
+			</li>
+		</ul>
+	</div>
+	<div id="nav_filter">
+		<div class="filter_wrap clearfix">
+			<ul class="filter_left fl">
+				<li class="left_link"><a class="link_one active" href="javascript:;">默认</a><i class="right"></i></li>
+				<li class="left_link"><a class="link_one" href="javascript:;">销量</a><i class="down"></i></li>
+				<li class="left_link"><a class="link_one" href="javascript:;">餐厅距离</a><i class="up"></i></li>
+				<li class="left_link"><a class="link_one" href="javascript:;">评分</a><i class="down"></i></li>
+				<li class="left_link"><a class="link_one" href="javascript:;">起送价</a><i class="up"></i></li>
+				<li class="left_link"><a class="link_one" href="javascript:;">送餐速度</a><i class="up"></i></li>
+			</ul>
+			<form class="filter_right fr">
+				<label><input type="checkbox" name="choose" value="">支持在线支付</label>
+				<label><input type="checkbox" name="choose" value="">新用户立减</label>
+				<label><input type="checkbox" name="choose" value="">特价优惠</label>
+				<label><input type="checkbox" name="choose" value="">下单返券</label>
+			</form>
+		</div>
+	</div>
+	<section id="container">
+		<ul class="main_cont clearfix">
+			<li class="cont_list fl" data_id="cont_list">
+				<img src="img/pic_one.jpg" alt="">
+				<div class="list_cont">
+					<h3 class="cont_tit">五月香饭店</h3>
+					<div class="cont_detail">
+						<span class="detail_star"><span></span></span>
+						<span class="detail_sale">月售<strong>1017</strong>份</span>
+						<p class="detail_info clearfix">
+							<span class="info_one fl">起送：￥<b>25</b></span>
+							<span class="info_one fl">配送：￥<b>10</b></span>
+							<span class="info_two fr">40分钟</span>
+						</p>
+						<span class="info_pic">
+							<img src="img/pay_s.png" alt="在线支付">
+							<img src="img/xin_s.png" alt="在线支付">
+							<img src="img/shop_coupon_s.png" alt="在线支付">
+							<img src="img/fan_s.png" alt="在线支付">
+							<img src="img/jian_s.png" alt="在线支付">
+							<img src="img/coupon_s.png" alt="在线支付">
+						</span>
+					</div>
+				</div>
+				<div class="pic_mask">接收预定，17:00开始配送</div>
+				<div class="cont_mask">
+					<h3>五月香饭店</h3>
+					<ul>
+						<li class="clearfix"><img class="fl" src="img/pay_s.png" alt="">支持在线支付</li>
+						<li class="clearfix"><img class="fl" src="img/xin_s.png" alt="">(手机app专享)新用户在线支付满35减5元</li>
+						<li class="clearfix"><img class="fl" src="img/shop_coupon_s.png" alt="">(手机app专享)进店可领商家代金券1张</li>
+						<li class="clearfix"><img class="fl" src="img/fan_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/jian_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/coupon_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+					</ul>
+					<h3 class="announcement">商家公告</h3>
+					<p>为了更快找到五里香，请添加收藏！12点到1点半是出餐高峰期，送达时间在一小时左右，为了不影响你用餐，望大家提前下单或避开高峰期，谢谢理解</p>
+					<i class="sj_one">◆</i>
+					<i class="sj_two">◆</i>
+				</div>
+			</li>
+			<li class="cont_list fl" data_id="cont_list">
+				<img src="img/pic_one.jpg" alt="">
+				<div class="list_cont">
+					<h3 class="cont_tit">五月香饭店</h3>
+					<div class="cont_detail">
+						<span class="detail_star"><span></span></span>
+						<span class="detail_sale">月售<strong>1017</strong>份</span>
+						<p class="detail_info clearfix">
+							<span class="info_one fl">起送：￥<b>25</b></span>
+							<span class="info_one fl">配送：￥<b>10</b></span>
+							<span class="info_two fr">40分钟</span>
+						</p>
+						<span class="info_pic">
+							<img src="img/pay_s.png" alt="在线支付">
+							<img src="img/xin_s.png" alt="在线支付">
+							<img src="img/shop_coupon_s.png" alt="在线支付">
+							<img src="img/fan_s.png" alt="在线支付">
+							<img src="img/jian_s.png" alt="在线支付">
+							<img src="img/coupon_s.png" alt="在线支付">
+						</span>
+					</div>
+				</div>
+				<div class="pic_mask">接收预定，17:00开始配送</div>
+				<div class="cont_mask">
+					<h3>五月香饭店</h3>
+					<ul>
+						<li class="clearfix"><img class="fl" src="img/pay_s.png" alt="">支持在线支付</li>
+						<li class="clearfix"><img class="fl" src="img/xin_s.png" alt="">(手机app专享)新用户在线支付满35减5元</li>
+						<li class="clearfix"><img class="fl" src="img/shop_coupon_s.png" alt="">(手机app专享)进店可领商家代金券1张</li>
+						<li class="clearfix"><img class="fl" src="img/fan_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/jian_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/coupon_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+					</ul>
+					<h3 class="announcement">商家公告</h3>
+					<p>为了更快找到五里香，请添加收藏！12点到1点半是出餐高峰期，送达时间在一小时左右，为了不影响你用餐，望大家提前下单或避开高峰期，谢谢理解</p>
+					<i class="sj_one">◆</i>
+					<i class="sj_two">◆</i>
+				</div>
+			</li>
+			<li class="cont_list fl" data_id="cont_list">
+				<img src="img/pic_one.jpg" alt="">
+				<div class="list_cont">
+					<h3 class="cont_tit">五月香饭店</h3>
+					<div class="cont_detail">
+						<span class="detail_star"><span></span></span>
+						<span class="detail_sale">月售<strong>1017</strong>份</span>
+						<p class="detail_info clearfix">
+							<span class="info_one fl">起送：￥<b>25</b></span>
+							<span class="info_one fl">配送：￥<b>10</b></span>
+							<span class="info_two fr">40分钟</span>
+						</p>
+						<span class="info_pic">
+							<img src="img/pay_s.png" alt="在线支付">
+							<img src="img/xin_s.png" alt="在线支付">
+							<img src="img/shop_coupon_s.png" alt="在线支付">
+							<img src="img/fan_s.png" alt="在线支付">
+							<img src="img/jian_s.png" alt="在线支付">
+							<img src="img/coupon_s.png" alt="在线支付">
+						</span>
+					</div>
+				</div>
+				<div class="pic_mask">接收预定，17:00开始配送</div>
+				<div class="cont_mask">
+					<h3>五月香饭店</h3>
+					<ul>
+						<li class="clearfix"><img class="fl" src="img/pay_s.png" alt="">支持在线支付</li>
+						<li class="clearfix"><img class="fl" src="img/xin_s.png" alt="">(手机app专享)新用户在线支付满35减5元</li>
+						<li class="clearfix"><img class="fl" src="img/shop_coupon_s.png" alt="">(手机app专享)进店可领商家代金券1张</li>
+						<li class="clearfix"><img class="fl" src="img/fan_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/jian_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/coupon_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+					</ul>
+					<h3 class="announcement">商家公告</h3>
+					<p>为了更快找到五里香，请添加收藏！12点到1点半是出餐高峰期，送达时间在一小时左右，为了不影响你用餐，望大家提前下单或避开高峰期，谢谢理解</p>
+					<i class="sj_one">◆</i>
+					<i class="sj_two">◆</i>
+				</div>
+			</li>
+			<li class="cont_list m0 fl" data_id="cont_list">
+				<img src="img/pic_one.jpg" alt="">
+				<div class="list_cont">
+					<h3 class="cont_tit">五月香饭店</h3>
+					<div class="cont_detail">
+						<span class="detail_star"><span></span></span>
+						<span class="detail_sale">月售<strong>1017</strong>份</span>
+						<p class="detail_info clearfix">
+							<span class="info_one fl">起送：￥<b>25</b></span>
+							<span class="info_one fl">配送：￥<b>10</b></span>
+							<span class="info_two fr">40分钟</span>
+						</p>
+						<span class="info_pic">
+							<img src="img/pay_s.png" alt="在线支付">
+							<img src="img/xin_s.png" alt="在线支付">
+							<img src="img/shop_coupon_s.png" alt="在线支付">
+							<img src="img/fan_s.png" alt="在线支付">
+							<img src="img/jian_s.png" alt="在线支付">
+							<img src="img/coupon_s.png" alt="在线支付">
+						</span>
+					</div>
+				</div>
+				<div class="pic_mask">接收预定，17:00开始配送</div>
+				<div class="cont_mask mask_left">
+					<h3>五月香饭店</h3>
+					<ul>
+						<li class="clearfix"><img class="fl" src="img/pay_s.png" alt="">支持在线支付</li>
+						<li class="clearfix"><img class="fl" src="img/xin_s.png" alt="">(手机app专享)新用户在线支付满35减5元</li>
+						<li class="clearfix"><img class="fl" src="img/shop_coupon_s.png" alt="">(手机app专享)进店可领商家代金券1张</li>
+						<li class="clearfix"><img class="fl" src="img/fan_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/jian_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/coupon_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+					</ul>
+					<h3 class="announcement">商家公告</h3>
+					<p>为了更快找到五里香，请添加收藏！12点到1点半是出餐高峰期，送达时间在一小时左右，为了不影响你用餐，望大家提前下单或避开高峰期，谢谢理解</p>
+					<i class="sj_one">◆</i>
+					<i class="sj_two">◆</i>
+				</div>
+			</li>
+			<li class="cont_list fl" data_id="cont_list">
+				<img src="img/pic_one.jpg" alt="">
+				<div class="list_cont">
+					<h3 class="cont_tit">五月香饭店</h3>
+					<div class="cont_detail">
+						<span class="detail_star"><span></span></span>
+						<span class="detail_sale">月售<strong>1017</strong>份</span>
+						<p class="detail_info clearfix">
+							<span class="info_one fl">起送：￥<b>25</b></span>
+							<span class="info_one fl">配送：￥<b>10</b></span>
+							<span class="info_two fr">40分钟</span>
+						</p>
+						<span class="info_pic">
+							<img src="img/pay_s.png" alt="在线支付">
+							<img src="img/xin_s.png" alt="在线支付">
+							<img src="img/shop_coupon_s.png" alt="在线支付">
+							<img src="img/fan_s.png" alt="在线支付">
+							<img src="img/jian_s.png" alt="在线支付">
+							<img src="img/coupon_s.png" alt="在线支付">
+						</span>
+					</div>
+				</div>
+				<div class="pic_mask">接收预定，17:00开始配送</div>
+				<div class="cont_mask">
+					<h3>五月香饭店</h3>
+					<ul>
+						<li class="clearfix"><img class="fl" src="img/pay_s.png" alt="">支持在线支付</li>
+						<li class="clearfix"><img class="fl" src="img/xin_s.png" alt="">(手机app专享)新用户在线支付满35减5元</li>
+						<li class="clearfix"><img class="fl" src="img/shop_coupon_s.png" alt="">(手机app专享)进店可领商家代金券1张</li>
+						<li class="clearfix"><img class="fl" src="img/fan_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/jian_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/coupon_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+					</ul>
+					<h3 class="announcement">商家公告</h3>
+					<p>为了更快找到五里香，请添加收藏！12点到1点半是出餐高峰期，送达时间在一小时左右，为了不影响你用餐，望大家提前下单或避开高峰期，谢谢理解</p>
+					<i class="sj_one">◆</i>
+					<i class="sj_two">◆</i>
+				</div>
+			</li>
+			<li class="cont_list fl" data_id="cont_list">
+				<img src="img/pic_one.jpg" alt="">
+				<div class="list_cont">
+					<h3 class="cont_tit">五月香饭店</h3>
+					<div class="cont_detail">
+						<span class="detail_star"><span></span></span>
+						<span class="detail_sale">月售<strong>1017</strong>份</span>
+						<p class="detail_info clearfix">
+							<span class="info_one fl">起送：￥<b>25</b></span>
+							<span class="info_one fl">配送：￥<b>10</b></span>
+							<span class="info_two fr">40分钟</span>
+						</p>
+						<span class="info_pic">
+							<img src="img/pay_s.png" alt="在线支付">
+							<img src="img/xin_s.png" alt="在线支付">
+							<img src="img/shop_coupon_s.png" alt="在线支付">
+							<img src="img/fan_s.png" alt="在线支付">
+							<img src="img/jian_s.png" alt="在线支付">
+							<img src="img/coupon_s.png" alt="在线支付">
+						</span>
+					</div>
+				</div>
+				<div class="pic_mask">接收预定，17:00开始配送</div>
+				<div class="cont_mask">
+					<h3>五月香饭店</h3>
+					<ul>
+						<li class="clearfix"><img class="fl" src="img/pay_s.png" alt="">支持在线支付</li>
+						<li class="clearfix"><img class="fl" src="img/xin_s.png" alt="">(手机app专享)新用户在线支付满35减5元</li>
+						<li class="clearfix"><img class="fl" src="img/shop_coupon_s.png" alt="">(手机app专享)进店可领商家代金券1张</li>
+						<li class="clearfix"><img class="fl" src="img/fan_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/jian_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/coupon_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+					</ul>
+					<h3 class="announcement">商家公告</h3>
+					<p>为了更快找到五里香，请添加收藏！12点到1点半是出餐高峰期，送达时间在一小时左右，为了不影响你用餐，望大家提前下单或避开高峰期，谢谢理解</p>
+					<i class="sj_one">◆</i>
+					<i class="sj_two">◆</i>
+				</div>
+			</li>
+			<li class="cont_list fl" data_id="cont_list">
+				<img src="img/pic_one.jpg" alt="">
+				<div class="list_cont">
+					<h3 class="cont_tit">五月香饭店</h3>
+					<div class="cont_detail">
+						<span class="detail_star"><span></span></span>
+						<span class="detail_sale">月售<strong>1017</strong>份</span>
+						<p class="detail_info clearfix">
+							<span class="info_one fl">起送：￥<b>25</b></span>
+							<span class="info_one fl">配送：￥<b>10</b></span>
+							<span class="info_two fr">40分钟</span>
+						</p>
+						<span class="info_pic">
+							<img src="img/pay_s.png" alt="在线支付">
+							<img src="img/xin_s.png" alt="在线支付">
+							<img src="img/shop_coupon_s.png" alt="在线支付">
+							<img src="img/fan_s.png" alt="在线支付">
+							<img src="img/jian_s.png" alt="在线支付">
+							<img src="img/coupon_s.png" alt="在线支付">
+						</span>
+					</div>
+				</div>
+				<div class="pic_mask">接收预定，17:00开始配送</div>
+				<div class="cont_mask">
+					<h3>五月香饭店</h3>
+					<ul>
+						<li class="clearfix"><img class="fl" src="img/pay_s.png" alt="">支持在线支付</li>
+						<li class="clearfix"><img class="fl" src="img/xin_s.png" alt="">(手机app专享)新用户在线支付满35减5元</li>
+						<li class="clearfix"><img class="fl" src="img/shop_coupon_s.png" alt="">(手机app专享)进店可领商家代金券1张</li>
+						<li class="clearfix"><img class="fl" src="img/fan_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/jian_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/coupon_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+					</ul>
+					<h3 class="announcement">商家公告</h3>
+					<p>为了更快找到五里香，请添加收藏！12点到1点半是出餐高峰期，送达时间在一小时左右，为了不影响你用餐，望大家提前下单或避开高峰期，谢谢理解</p>
+					<i class="sj_one">◆</i>
+					<i class="sj_two">◆</i>
+				</div>
+			</li>
+			<li class="cont_list m0 fl" data_id="cont_list">
+				<img src="img/pic_one.jpg" alt="">
+				<div class="list_cont">
+					<h3 class="cont_tit">五月香饭店</h3>
+					<div class="cont_detail">
+						<span class="detail_star"><span></span></span>
+						<span class="detail_sale">月售<strong>1017</strong>份</span>
+						<p class="detail_info clearfix">
+							<span class="info_one fl">起送：￥<b>25</b></span>
+							<span class="info_one fl">配送：￥<b>10</b></span>
+							<span class="info_two fr">40分钟</span>
+						</p>
+						<span class="info_pic">
+							<img src="img/pay_s.png" alt="在线支付">
+							<img src="img/xin_s.png" alt="在线支付">
+							<img src="img/shop_coupon_s.png" alt="在线支付">
+							<img src="img/fan_s.png" alt="在线支付">
+							<img src="img/jian_s.png" alt="在线支付">
+							<img src="img/coupon_s.png" alt="在线支付">
+						</span>
+					</div>
+				</div>
+				<div class="pic_mask">接收预定，17:00开始配送</div>
+				<div class="cont_mask mask_left">
+					<h3>五月香饭店</h3>
+					<ul>
+						<li class="clearfix"><img class="fl" src="img/pay_s.png" alt="">支持在线支付</li>
+						<li class="clearfix"><img class="fl" src="img/xin_s.png" alt="">(手机app专享)新用户在线支付满35减5元</li>
+						<li class="clearfix"><img class="fl" src="img/shop_coupon_s.png" alt="">(手机app专享)进店可领商家代金券1张</li>
+						<li class="clearfix"><img class="fl" src="img/fan_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/jian_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+						<li class="clearfix"><img class="fl" src="img/coupon_s.png" alt="">(手机app专享)下单满50元即得商户代金券，代金券可与平台优惠同享！</li>
+					</ul>
+					<h3 class="announcement">商家公告</h3>
+					<p>为了更快找到五里香，请添加收藏！12点到1点半是出餐高峰期，送达时间在一小时左右，为了不影响你用餐，望大家提前下单或避开高峰期，谢谢理解</p>
+					<i class="sj_one">◆</i>
+					<i class="sj_two">◆</i>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<footer id="footer">
+		<address class="footer_wrap">
+			<div class="wrap_top clearfix">
+				<dl class="top_list fl">
+					<dt class="list_tit">帮助</dt>
+					<dd class="list_cont">建议与反馈</dd>
+					<dd class="list_cont">使用帮助</dd>
+					<dd class="list_cont">常见问题</dd>
+					<dd class="list_cont">用户协议</dd>
+				</dl>
+				<dl class="top_list fl">
+					<dt class="list_tit">关注我们</dt>
+					<dd class="list_cont">官方论坛</dd>
+					<dd class="list_cont">新浪微博</dd>
+					<dd class="list_cont">微信公众号</dd>
+				</dl>
+				<dl class="top_list fl">
+					<dt class="list_tit">商务合作</dt>
+					<dd class="list_cont">商务中心</dd>
+					<dd class="list_cont">邮箱</dd>
+				</dl>
+				<dl class="top_list fl">
+					<dt class="list_tit">客服热线</dt>
+					<dd class="list_cont">400-011-7777</dd>
+					<dd class="list_cont">周一至周日9:00-22:00</dd>
+				</dl>
+			</div>
+			<div class="wrap_bot">
+				<span class="company">北京小度信息科技有限公司</span>
+				<dl class="partner">
+					<dt>合作伙伴:</dt>
+					<dd><img src="img/nuomi_logo.png" alt=""></dd>
+					<dd><img src="img/qianbao_logo.png" alt=""></dd>
+				</dl>
+			</div>
+		</address>
+	</footer>
+</body>
+</html>
