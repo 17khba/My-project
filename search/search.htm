@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>微软必应搜索 - 全球搜索，有问必应 (Bing)</title>
+	<link rel="icon" href="http://cn.bing.com/sa/simg/bing_p_rr.ico">
+	<link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+	<div id="bg_box" class="clearfix">
+		<div id="box">
+			<h1 id="logo"></h1>
+			<div id="search_form">
+				<input id="wd" type="text" name="wd" autocomplete="off" placeholder="请输入内容">
+				<span class="search_btn"></span>
+			</div>
+		</div>
+	</div>
+	<section id="prompt">
+			<ul id="result" class="prompt_list"></ul>
+	</section>
+	<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="template.js"></script>
+	<script src="js/search.js"></script>
+	<script id="templateData" type="text/html">
+		{{each s as value i}}
+			<li>
+				<a class="txt_link" href="https://www.baidu.com/s?wd={{s[i]}}" target="_blank">{{s[i]}}</a>
+			</li>
+		{{/each}}
+	</script>
+</body>
+</html>
