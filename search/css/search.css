@@ -1,0 +1,92 @@
+/*css reset*/
+body,h1{margin: 0;}		
+body{background-color: #333;}
+ul{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+/*公共样式*/
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+body{
+	overflow: hidden;
+}
+#bg_box{
+	position: relative;
+	width: 1920px;
+	max-width: 1920px;
+	height: 1080px;
+	max-height: 1080px;
+	margin: 0 auto;
+	background: url(http://img.mukewang.com/52da5e7d0001c0f813660768.jpg) no-repeat;
+	background-size: cover;
+}
+#box{
+	position: absolute;
+	top: 20%;
+	left: 8%;
+}
+#logo{
+	float: left;
+	width: 107px;
+	height: 53px;
+	margin: -4px 18px 0 0;
+	background: url(http://img.mukewang.com/52da5e530001eea901070053.jpg) no-repeat;
+}
+#search_form{
+	float: left;
+	width: 407px;
+	padding: 5px;
+	background-color: #fff;
+}
+input[type="text"]{
+	float: left;
+	width: 375px;
+	height: 30px;
+	font: 16px/30px arial,'Microsoft Yahei';
+	border: 0;
+	outline: none;
+}
+.search_btn{
+	float: left;
+	width: 28px;
+	height: 28px;
+	background: transparent url(http://img.mukewang.com/52da5df800012b1e02220137.jpg) no-repeat -30px -107px;
+	border: 0;
+}
+#prompt{
+	position: absolute;
+	display: none;
+	width: 415px;
+	border: 1px solid #999;
+	background-color: #fff;
+}
+#result{
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}
+.prompt_list li{
+	width: 415px;
+	height: 32px;
+	font: 14px/28px arial,'Microsoft Yahei';
+}
+.prompt_list li:hover{
+	background-color: #F6F5F5;
+}
+.prompt_list li.active{
+	background-color: #F6F5F5;
+}
+.txt_link{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	font: 1em/1.6em arial,'Microsoft Yahei';
+	color: #666;
+}
+@media screen and ( max-width: 1920px ) {
+	max-width: 1920px;
+	max-height: 1080px;
+}
