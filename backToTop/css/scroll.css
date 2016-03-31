@@ -1,0 +1,17 @@
+.box{
+	width: 1190px;
+	margin: 0 auto;
+}
+#btn{
+	display: none;
+	position: fixed;
+	left: 50%;
+	bottom: 30px;
+	width: 40px;
+	height: 40px;
+	margin-left: 630px;
+	background: url(http://img.mukewang.com/535e0dc100010e9c00400080.jpg) no-repeat left top;
+}
+#btn:hover{
+	background: url(http://img.mukewang.com/535e0dc100010e9c00400080.jpg) no-repeat left bottom; 
+}
