@@ -1,0 +1,31 @@
+*{ box-sizing: border-box; }
+body{ 
+	font: 14px/40px 'Microsoft Yahei';
+	padding: 0;
+	margin: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+}
+ul{ 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0);
+	width: 200px;
+	padding: 0; 
+	margin: 0; 
+	list-style: none; 
+	overflow: hidden;
+}
+li{ 
+	float: left; 
+	width: 200px;
+	height: 40px;
+	margin: 2px;
+	text-align: center;
+	background-color: #dbdbdb; 
+	cursor: move;
+}
