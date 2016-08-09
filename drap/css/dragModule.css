@@ -1,0 +1,33 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font: 14px/100px 'Microsoft Yahei';
+	margin: 0;
+	overflow: hidden;
+}
+[id*=box]{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	border: 1px solid #fff;
+	background-color: #dbdbdb;
+	box-shadow: 0 0 3px rgba( 0, 0, 0, .5 );
+	cursor: move;
+}
+#box-one{
+	left: 0;
+	box-shadow: 0 0 3px rgba( 255, 255, 255, .5 );
+}
+#box-two{
+	left: 150px;
+	border: 1px solid transparent;
+	background-color: #f99;
+	border-radius: 50%;
+}
+#range{
+	width: 500px;
+	height: 500px;
+	background-color: #D5EFE9;
+}

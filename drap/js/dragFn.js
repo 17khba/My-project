@@ -37,7 +37,8 @@ Drag.prototype = {
     fnDown: function( e ){
         this.disX = e.clientX - this.obj.offsetLeft;
         this.disY = e.clientY - this.obj.offsetTop;
-        if( this.obj.setCapture ) this.obj.setCapture();
+        console.log(this);
+        if( this.setCapture ) this.obj.setCapture();
         this.settings.toDown( this.obj );
     },
     fnMove: function( e ){
@@ -49,7 +50,7 @@ Drag.prototype = {
     fnUp: function(){
         document.onmousemove = document.onmouseup = null;
         this.settings.toUp( this.obj );
-        if( this.obj.releaseCapture ) this.obj.releaseCapture();
+        if( this.releaseCapture ) this.obj.releaseCapture();
     },
     extend: function( obj1, obj2 ){
         for( var k in obj2 ){
