@@ -37,7 +37,6 @@ Drag.prototype = {
     fnDown: function( e ){
         this.disX = e.clientX - this.obj.offsetLeft;
         this.disY = e.clientY - this.obj.offsetTop;
-        console.log(this);
         if( this.setCapture ) this.obj.setCapture();
         this.settings.toDown( this.obj );
     },
