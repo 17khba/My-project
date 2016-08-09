@@ -1,0 +1,32 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font: 20px/100px 'Microsoft Yahei';
+	margin: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+}
+.wrap{
+	position: relative;
+	width: 800px;
+	height: 800px;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-color: #f2f2f2;
+	overflow: hidden;
+}
+.drap1{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #fff;
+	text-align: center;
+	background:radial-gradient(at 35px 35px,#FFF,#CCC,#FFF);
+  	background:-webkit-radial-gradient(35px 35px,#FFF,#CCC,#FFF);
+	box-shadow: 0 0 3px rgba( 0, 0, 0, .5 );
+	cursor: move;
+}
