@@ -1,9 +1,0 @@
-{
-  "private": true,
-  "dependencies": {
-    "director": "^1.2.8",
-    "todomvc-app-css": "^2.0.0",
-    "todomvc-common": "^1.0.0",
-    "vue": "^2.2.6"
-  }
-}
